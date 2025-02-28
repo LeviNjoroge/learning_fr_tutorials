@@ -1,5 +1,7 @@
+let log = require('./logger');
+
 const sayHello = (name) => {
     console.log("Hello "+name);
 }
 
-console.log(module);
+log("lorem ipsen")

@@ -1,7 +1,7 @@
 let url = "http://mylogger.io/log";
 
 function log(message){
-    console.log(message);
+    console.log("i say"+message);
 }
 
-log(url);
+module.exports = log;
