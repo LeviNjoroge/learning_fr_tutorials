@@ -8,9 +8,11 @@ http.createServer(function (req, res) {
         {
         'Content-Type': 'text/html'
         });
-        
-    //this is the body of the response
-    res.write()    
-}
 
-)
+    //this is the body of the response
+    res.write("The date and time are currently: "+dt.myDateTime())
+    
+    res.end();
+}
+).listen(8080);
+
