@@ -1,5 +1,5 @@
 var http = require('http');
-var dt = require('./myfirstmodule');
+var dt = require('./2.myfirstmodule');
 
 http.createServer(function (req, res) {
     //this is the head of the response
@@ -10,9 +10,8 @@ http.createServer(function (req, res) {
         });
 
     //this is the body of the response
-    res.write("The date and time are currently: "+dt.myDateTime())
+    res.write("The date and time are currently: <br>"+dt.myDateTime())
     
     res.end();
 }
 ).listen(8080);
-
