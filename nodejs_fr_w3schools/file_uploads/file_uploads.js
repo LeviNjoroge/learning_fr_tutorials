@@ -6,7 +6,7 @@ const fs = require('fs'); // File system module to work with files
 // Create an HTTP server
 http.createServer(function (req, res) {
   // Check if the request URL is for file upload
-  if (req.url == '/fileupload') {
+  if (req.url == '/fileUpload') {
     console.log("Beginning upload..."); // Log message to indicate upload process starts
     
     // Create an instance of the formidable form parser
@@ -22,10 +22,19 @@ http.createServer(function (req, res) {
         }
         
         // Get the uploaded file's temporary path
-        var oldpath = files.fileToUpload.filepath; 
+        var uploadedFile = Array.isArray(files.fileToUpload) ? files.fileToUpload[0] : files.fileToUpload;
+
+        // Check if the file exists and has a filepath property
+        if (!uploadedFile || !uploadedFile.filepath) {
+            res.writeHead(400, { 'Content-Type': 'text/plain' });
+            res.write("No file uploaded or incorrect file property name");
+            return res.end();
+        }
+
+        var oldpath = uploadedFile.filepath;
         
         // Define the new path where the file will be moved (storage folder)
-        var newpath = 'C:/Users/levyn/Desktop/Coding/learning_fr_tutorials/nodejs_fr_w3schools/file_uploads/storage' + files.fileToUpload.originalFilename;
+        var newpath = 'C:/Users/levyn/Desktop/Coding/learning_fr_tutorials/nodejs_fr_w3schools/file_uploads/storage/' + files.fileToUpload.originalFilename;
         
         // Move the file from temp directory to the desired location
         fs.rename(oldpath, newpath, function (err) {
@@ -39,10 +48,6 @@ http.createServer(function (req, res) {
           res.write('File uploaded and moved successfully!');
           res.end();
         });
-        
-        // This line should not be here because `res.end()` is already inside the callback
-        // res.write('File uploaded');
-        // res.end();
     });
   } else { 
     // If the request is not for file upload, show the HTML form for file upload
