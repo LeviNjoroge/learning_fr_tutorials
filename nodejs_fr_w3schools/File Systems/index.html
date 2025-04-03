@@ -1,0 +1,75 @@
+<!--
+Task 15: HTML + CSS - Create a Simple Blog Post
+    Create a page with:
+        A heading for the blog post title.
+        A paragraph for the content.
+        A footer with the author's name and the date.
+    Style it with CSS:
+        Add padding and spacing to the content.
+        Use a different font for the title and the paragraph.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 15</title>
+    <style>
+        h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer{
+    font-style: italic;
+    text-align: right;
+}
+
+#blog-post{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+    </style>
+</head>
+<body>
+    <div id="blog-post">
+
+        <h1>The Art of Chess: Strategy, Patience, and Mastery</h1>
+
+        <div id="blog-content">
+            <p>Chess is more than just a game; it is a battle of minds, 
+                a test of patience, and a journey toward strategic mastery. 
+                Originating over a thousand years ago, chess has evolved into 
+                a globally recognized game of intellect, enjoyed by millions.</p>
+            <p>The game is played on an 8x8 board, with each player controlling 
+                16 pieces, including the king, queen, rooks, bishops, knights, 
+                and pawns. The objective is simple yet complex—checkmate your 
+                opponent's king while protecting your own.</p>
+            <p>Great players understand that chess is not just about moving pieces 
+                but about planning several moves ahead. A single mistake can turn 
+                the tide of a game, making every move crucial. Whether you’re a 
+                beginner learning basic tactics or an advanced player studying 
+                grandmaster games, chess continues to offer endless opportunities 
+                for growth.</p>
+            <p>So, whether you play for fun or competition, remember that every 
+                move counts. Happy playing!</p>
+        </div>
+
+        <footer>By Jay &copy; <span></span></footer>
+
+    </div>
+
+    <script>
+        function getCurrentYear() {
+    const currentDate = new Date();
+    return currentDate.getFullYear();
+}
+document.querySelector('footer span').textContent = getCurrentYear();
+    </script>
+</body>
+</html>
