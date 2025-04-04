@@ -7,6 +7,7 @@ const password = process.env.PASSWORD;
 //receivers email
 var mail = "levynjoroge1@gmail.com";
 
+
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -22,9 +23,4 @@ var mailOptions = {
     text:"This should be easy"
 }
 
-transporter.sendEmail(mailOptions, (err, info)=>{
-    if (err) throw err;
-    else{
-        console.log("Email sent "+info.response);
-    }
-})
+transporter.sendMail(mailOptions);
