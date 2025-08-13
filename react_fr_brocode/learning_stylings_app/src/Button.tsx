@@ -1,7 +1,7 @@
 
 function Button (){
     return(
-        <button>Click Me!</button>
+        <button className="button">Click Me!</button>
     );
 }
 
