@@ -12,7 +12,10 @@ const Assets = ()=>{
         <div className="assets">
             <p>Our valued assets include:</p>
             <ul>
-                <li></li>
+                {assets.forEach(asset => {
+                    print(<li>{asset}</li>)
+                })
+                }
             </ul>
         </div>
     );
