@@ -1,3 +1,8 @@
 .button{
+  padding: 10px;
+  border: 10px;
+  color: white;
+  background-color: hsl(219, 23%, 17%);
+  border-radius: 10px;
   
 }
