@@ -7,7 +7,7 @@
 // }
 
 const Assets = ()=>{
-    assets=['bisquits', 'lollypops', ];
+    assets=['bisquits', 'lollypops', 'ballgums'];
     return(
         <div className="assets">
             <p>Our valued assets include:</p>
