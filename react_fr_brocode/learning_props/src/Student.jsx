@@ -3,8 +3,13 @@
 function Student(props) {
     
     return(
-
+        <div className="student">
+            <p>Name: {props.name} <br />
+                Age: {props.age} <br />
+                Course: {props.course} <br />
+            </p>
+        </div>
     );
 }
 
-export dedfaku
+export default Student
