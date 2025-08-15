@@ -6,7 +6,7 @@ function Student(props) {
         <div className="student">
             <p>Name: {props.name} <br />
                 Age: {props.age} <br />
-                Course: {props.course} <br />
+                <span title={props.title}>Course: {props.course}</span> <br />
             </p>
         </div>
     );

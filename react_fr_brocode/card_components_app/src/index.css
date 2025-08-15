@@ -1,11 +1,13 @@
 .card{
-  border: 1px solid black;
-  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.4);
+  font-family:'Times New Roman', Times, serif;
+  border: 1px solid rgba(0, 0, 0, 0.126);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.068);
   border-radius: 10px;
   padding: 10px;
   width: 200px;
   text-align: center;
   display: inline-block;
+  margin: 10px;
 
   img{
     width: 60%;
@@ -15,10 +17,10 @@
     margin: 0%;
   }
 
-  h2{
+  .card_heading{
     color: hsl(0, 0%, 2%);
   }
   .card_text{
-    color: hsl(0, 0%, 5%);
+    color: hsl(0, 0%, 3%);
   }
 }
