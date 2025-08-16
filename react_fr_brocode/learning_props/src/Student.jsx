@@ -13,16 +13,16 @@ function Student(props) {
     );
 }
 
-// Student.propTypes = {
-//     name: propTypes.string,
-//     age: Proptypes.number,
-//     course: propTypes.string
-// }
-
-Student.defaultProps = {
-    name: "Guest",
-    age: 0,
-    Course: "None Selected"
+Student.Proptypes = {
+    name: propTypes.string,
+    age: Proptypes.number,
+    course: propTypes.string
 }
+
+// Student.defaultProps = {
+//     name: "Guest",
+//     age: 0,
+//     Course: "None Selected"
+// }
 
 export default Student
