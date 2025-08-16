@@ -1,4 +1,5 @@
 // for props I should use "props" object as a parameter and access the data stored using key:value pairs
+import Proptypes from 'prop-types'
 
 function Student(props) {
     
@@ -10,6 +11,18 @@ function Student(props) {
             </p>
         </div>
     );
+}
+
+// Student.propTypes = {
+//     name: propTypes.string,
+//     age: Proptypes.number,
+//     course: propTypes.string
+// }
+
+Student.defaultProps = {
+    name: "Guest",
+    age: 0,
+    Course: "None Selected"
 }
 
 export default Student
