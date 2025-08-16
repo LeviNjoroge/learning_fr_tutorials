@@ -6,7 +6,7 @@ function App(){
       <Student name="Patrick" age={36} course="Fishology" title="if there exists LOL"/>
       <Student name="Sandy" age={20} course="BSc. Physics"/>
       <Student/>
-      <Student name="Squidward" age="90" course="Music"/>
+      {/* <Student name="Squidward" age="90" course="Music"/> */}
     </>
   );
 }
