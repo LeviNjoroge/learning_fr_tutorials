@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-// similar to setting default props
+// similar to setting default props --- tho interestingly, defaultProps aint working no more
 function Student({
   name = "Guest",
   age = 0,
