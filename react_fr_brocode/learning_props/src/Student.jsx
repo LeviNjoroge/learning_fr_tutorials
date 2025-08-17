@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+// similar
 function Student({
   name = "Guest",
   age = 0,
