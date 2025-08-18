@@ -1,28 +1,17 @@
-import PropTypes from 'prop-types';
 
-// similar to setting default props --- tho interestingly, defaultProps aint working no more
 function Student({
   name = "Guest",
   age = 0,
-  course = "None Selected",
-  title = "No Title",
-}) {
-  return (
+  course = "None Chosen",
+  title = "",
+}){
+  return(
     <div className="student">
-      <p>
-        Name: {name} <br />
-        Age: {age} <br />
-        <span title={title}>Course: {course}</span> <br />
-      </p>
+      Name: {name} <br />
+      Age: {age} <br />
+      Course: <span title={title}>{course}</span> <br />
     </div>
   );
 }
-
-Student.propTypes = {
-  name: PropTypes.string,
-  age: PropTypes.number,
-  course: PropTypes.string,
-  title: PropTypes.string,
-};
 
 export default Student;
