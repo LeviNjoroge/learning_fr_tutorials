@@ -1,8 +1,10 @@
 
 
-function HelloWorld(){
+function HelloWorld(props){
     return(
-
+        <>
+        
+        </>
     );
 }
 
