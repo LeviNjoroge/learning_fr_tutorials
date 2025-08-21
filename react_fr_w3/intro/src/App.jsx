@@ -3,7 +3,8 @@
 function App() {
 
   return (
-    <></>
+    <>
+    </>
   );
 }
 
