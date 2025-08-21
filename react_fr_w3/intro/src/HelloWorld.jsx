@@ -1,9 +1,11 @@
 
 
-function HelloWorld(props){
+function HelloWorld({
+    name = "World"
+}){
     return(
         <>
-            Hello World, I am {props.name}
+            Hello {name}!
         </>
     );
 }
