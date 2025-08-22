@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <HelloWorld name="Ramsey"/>
+      <HelloWorld name="Ramsey Show"/>
     </>
   );
 }
