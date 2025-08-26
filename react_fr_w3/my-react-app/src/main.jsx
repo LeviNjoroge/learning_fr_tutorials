@@ -1,4 +1,4 @@
-//
+// tis honestky good to finally put my hands on this project as 
 
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
