@@ -15,12 +15,15 @@ function App() {
       this.model = model
     }
     showCase(){
-      return this.present+" it is a "+this.model
+      return this.present()+" it is a "+this.model
     }
   }
   const myNewTesla = new Model("Tesla", "CyberTruck")
+  const myNewMercedes = new Car("Mercedes")
+
   return (
     <>
+      {myNewMercedes.present()}<br/>
       {myNewTesla.showCase()}
     </>
   )
