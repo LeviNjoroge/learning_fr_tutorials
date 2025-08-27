@@ -21,7 +21,7 @@ function App() {
   const myNewTesla = new Model("Tesla", "CyberTruck")
   return (
     <>
-      
+      {myNewTesla.showCase()}
     </>
   )
 }
