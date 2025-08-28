@@ -1,4 +1,4 @@
-// learning jsx to effectiverly work with and on 
+// learning jsx to effectiverly work with and on react
 function App() {
 
   class Car {
