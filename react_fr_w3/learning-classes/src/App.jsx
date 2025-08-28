@@ -1,4 +1,4 @@
-// learning
+// learning jsx to effectiverly work with and on 
 function App() {
 
   class Car {
