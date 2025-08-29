@@ -1,4 +1,4 @@
-//kijuaji kidogo apa na 
+//kijuaji kidogo apa na pale 
 
 function HelloWorld({
     name = "World"
