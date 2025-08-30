@@ -1,5 +1,5 @@
 //kijuaji kidogo apa na pale 😄
-// courtesy of 
+// courtesy of brocode!
 
 function HelloWorld({
     name = "World"
