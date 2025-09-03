@@ -2,7 +2,7 @@
 // courtesy of brocode!
 // I stopped using his tutorials for react since they seemed outdated
 //  so here I am, retrying the whole thing, hope it goes well
-// 
+// now I'm stalling
 
 function HelloWorld({
     name = "World"
