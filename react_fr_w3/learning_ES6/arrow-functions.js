@@ -18,4 +18,5 @@ const Hello = () => "Hello WOrld"
 // if the statement returns a value:
 const SayHi = (name) => "Hey "+name;
 
-// you can als
+// you can also remove the brackets btw:
+cosnt SayHi = name => "Hey "+name;
