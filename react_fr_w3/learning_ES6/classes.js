@@ -23,6 +23,6 @@ console.log(myNewTesla.callCar())
 // lets now create a new class: Model that extends the car class
 class Model extends Car{
     constructor(model, ){
-
+        /// blablabla --- I have messed up a bit up there with the logic, the semantics are correct, gonna look into it tomorrow
     }
 }
