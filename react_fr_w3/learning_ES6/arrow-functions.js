@@ -16,7 +16,7 @@ const Hello =()=>{
 const Hello = () => "Hello WOrld"
 
 // if the statement returns a value:
-const SayHi = (name) => "Hey "+name;
+const SayHi = (name) => "Hi "+name;
 
 // you can also remove the brackets btw:
-cosnt SayHi = name => "Hey "+name;
+const SayHey = name => "Hey "+name;
