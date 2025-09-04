@@ -20,4 +20,9 @@ myNewTesla = new Car("family car", "tesla inc", 2021);
 
 console.log(myNewTesla.callCar())
 
-// lets now 
+// lets now create a new class: Model that extends the car class
+class Model extends Car{
+    constructor(model, ){
+
+    }
+}
