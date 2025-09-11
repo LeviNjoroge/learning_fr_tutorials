@@ -4,8 +4,18 @@
 3. const - has a block scope ***
 */
 
-// var 
-function callBook(){
-    var book = "Kasuku";
+// var
+for(i=0;i<10;i++){
+    var sum = 0
+    sum+= i;
 }
-console.log(book)
+console.log(sum);
+
+// let
+for(i=1;i<10;i++){
+    let product = 1
+    product*= i;
+}
+console.log(product); // this results in an error because a variable defined using let can only be accessed in the block its defined in
+
+
