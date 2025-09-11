@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <HelloWorld name="Ramsey Show"/>
-      
+      <Fruits/>
     </>
   );
 }
