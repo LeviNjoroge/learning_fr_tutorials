@@ -1,5 +1,7 @@
 let name = "Joe"
 let age = 21
-let gender = 
+let gender = "male"
 
-const message = "H"
+const message1 = name+"is a good "+(gender=="male")?"boy":"girl"+"\n"
+                "He is "+age+" years old";
+
