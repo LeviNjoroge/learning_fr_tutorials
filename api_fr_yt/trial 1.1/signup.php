@@ -1,4 +1,6 @@
-
+<?php
+// kutayarisha mitambo
+?>
 
 <!DOCTYPE html>
 <html lang="en">
