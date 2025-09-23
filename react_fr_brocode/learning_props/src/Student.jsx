@@ -1,4 +1,4 @@
-// 
+// I have used destructured props with
 function Student({
   name = "Guest",
   age = 0,
