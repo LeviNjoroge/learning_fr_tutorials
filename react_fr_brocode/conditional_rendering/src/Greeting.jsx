@@ -1,5 +1,5 @@
 
-function Greeting(props){ // 
+function Greeting(props){ // this can be easier dealt with using objects
 
     if(props.userLoggedIn){
         return (
