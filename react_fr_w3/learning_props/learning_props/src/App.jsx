@@ -5,7 +5,7 @@ function App() {
   
   return (
     <>
-      My
+      <h1>My childen</h1>
     </>
   );
 }
