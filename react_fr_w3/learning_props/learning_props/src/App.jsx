@@ -6,6 +6,9 @@ function App() {
   return (
     <>
       <h1>My childen</h1>
+      <Son>
+        
+      </Son>
     </>
   );
 }
