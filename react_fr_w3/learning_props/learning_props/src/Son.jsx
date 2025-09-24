@@ -1,7 +1,8 @@
 function Son(props){
     return(
-        <h2>Son</h2>
-        <p></p>
+        <>
+            <h2>Son</h2>
+        </>
     );
 }
 
