@@ -7,8 +7,15 @@ function App() {
     <>
       <h1>My childen</h1>
       <Son>
-        
+        <p>
+          This is created by the parent 🙂
+        </p>
       </Son>
+      <Daughter>
+        <p>
+          This is created by the parent 🙂
+        </p>
+      </Daughter>
     </>
   );
 }
