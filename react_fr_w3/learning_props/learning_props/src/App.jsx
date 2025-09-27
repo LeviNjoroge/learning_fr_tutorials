@@ -13,7 +13,7 @@ function App() {
       </Son>
       <Daughter>
         <p>
-          This is created by the parent 🙂
+          I 🙂
         </p>
       </Daughter>
     </>
