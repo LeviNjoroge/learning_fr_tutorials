@@ -13,7 +13,7 @@ function App() {
       </Son>
       <Daughter>
         <p>
-          I am the 🙂
+          I am the flower 🙂
         </p>
       </Daughter>
     </>
