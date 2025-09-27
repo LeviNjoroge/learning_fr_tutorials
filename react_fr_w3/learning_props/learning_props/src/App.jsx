@@ -8,7 +8,7 @@ function App() {
       <h1>My childen</h1>
       <Son>
         <p>
-          This is created by the parent 🙂
+          I am the son!
         </p>
       </Son>
       <Daughter>
