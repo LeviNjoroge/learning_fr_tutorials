@@ -6,7 +6,7 @@ function App() {
   
   return (
     <>
-      <Hello/>
+      <Hello name="Pneumonoultramicroscopicsilicovolcanoconiosis"/>
       <h1>My childen</h1>
       <Son>
         <p>
