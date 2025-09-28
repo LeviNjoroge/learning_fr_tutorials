@@ -4,7 +4,9 @@ function Hello({
     name = ""
 }){
     return(
-        
+        <>
+            {name && <h1>Hello, I'm {name}</h1>};
+        </>
     );
 }
 
