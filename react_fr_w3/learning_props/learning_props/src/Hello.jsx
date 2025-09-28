@@ -5,7 +5,7 @@ function Hello({
 }){
     return(
         <>
-            {name && <h1>Hello, I'm {name}</h1>};
+            {name && <h1>Hello, I'm {name}</h1>}
         </>
     );
 }

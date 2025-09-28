@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Hello name="Pneumonoultramicroscopicsilicovolcanoconiosis"/>
-      <h1>My childen</h1>
+      <h2>My childen</h2>
       <Son>
         <p>
           I am the son!
