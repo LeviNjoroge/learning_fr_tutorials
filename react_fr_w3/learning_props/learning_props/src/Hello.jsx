@@ -1,1 +1,11 @@
 // this page will contain a heading page issuing a greeting on the condition that a name of the parent is input
+
+function Hello({
+    name = ""
+}){
+    return(
+        
+    );
+}
+
+export default Hello;
