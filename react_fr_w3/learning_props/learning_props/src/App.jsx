@@ -1,10 +1,12 @@
 import Son from "./Son.jsx";
 import Daughter from "./Daughter.jsx";
+import Hello from "./Hello.jsx";
 
 function App() {
   
   return (
     <>
+      <Hello name="Lee"/>
       <h1>My childen</h1>
       <Son>
         <p>
