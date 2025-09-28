@@ -6,7 +6,7 @@ function App() {
   
   return (
     <>
-      <Hello name="Lee"/>
+      <Hello/>
       <h1>My childen</h1>
       <Son>
         <p>
