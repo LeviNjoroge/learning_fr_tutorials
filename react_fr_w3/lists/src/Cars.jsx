@@ -1,7 +1,9 @@
-let cars = [""]
+let cars = ["Tesla", "Honda", "Toyota"];
 
 function Cars() {
-    return();
+    return(
+        <ul></ul>
+    );
 }
 
 export default Cars;
