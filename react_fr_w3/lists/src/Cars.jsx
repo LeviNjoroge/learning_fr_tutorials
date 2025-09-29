@@ -1,8 +1,14 @@
+import { Linter } from "eslint";
+
 let cars = ["Tesla", "Honda", "Toyota"];
 
 function Cars() {
     return(
-        <ul></ul>
+        <ul>
+            {cars.map( ()=>
+                <li>{car}</li>
+            )}
+        </ul>
     );
 }
 
