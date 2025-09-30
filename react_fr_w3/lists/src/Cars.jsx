@@ -6,7 +6,7 @@ function Cars() {
     return(
         <ul>
             {cars.map( ()=>
-                <li>I {car}</li>
+                <li>I have a {car}</li>
             )}
         </ul>
     );
