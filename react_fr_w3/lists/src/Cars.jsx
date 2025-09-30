@@ -6,7 +6,9 @@ function Cars() {
     return(
         <ul>
             {cars.map( ()=>
-                <li>I have a {car}</li>
+                if({"Honda"}){
+                    
+                }
             )}
         </ul>
     );
