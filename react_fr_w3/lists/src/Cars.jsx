@@ -9,6 +9,9 @@ function Cars() {
                 if({"Honda"}){
                     
                 }
+                else{
+                    {<li>I have a {car} in my garage</li>}
+                }
             )}
         </ul>
     );
