@@ -1,4 +1,3 @@
-import { Linter } from "eslint";
 
 let cars = ["Tesla", "Honda", "Toyota"];
 
