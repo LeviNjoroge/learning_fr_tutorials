@@ -6,11 +6,12 @@ function Cars() {
     return(
         <ul>
             {cars.map( ()=>
-                if({"Honda"}){
-                    
-                }
-                else{
-                    {<li>I have a {car}</li>}
+                {
+                    if ("Honda") {
+                        {<li>I have a green {car}</li>}
+                    } else {
+                        {<li>I have a {car}</li>}
+                    }
                 }
             )}
         </ul>
