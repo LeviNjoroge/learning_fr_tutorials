@@ -10,7 +10,7 @@ function Cars() {
                     
                 }
                 else{
-                    {<li>I have a {car} in my garage</li>}
+                    {<li>I have a {car} in my garage.</li>}
                 }
             )}
         </ul>
