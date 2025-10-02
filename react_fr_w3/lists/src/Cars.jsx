@@ -1,18 +1,12 @@
 
-let cars = ["Tesla", "Honda", "Toyota"];
-
 function Cars() {
+
+    let cars = ["Tesla", "Honda", "Toyota"];
+
     return(
         <ul>
-            {cars.map( ()=>
-                // {
-                //     if ("Honda") {
-                //         {<li>I have a green {car}</li>}
-                //     } else {
-                //         {<li>I have a {car}</li>}
-                //     }
-                // }
-                <li>I have a {car}</li>
+            {cars.map((car) =>
+                <li key=>I have a {car}</li>
             )}
         </ul>
     );
