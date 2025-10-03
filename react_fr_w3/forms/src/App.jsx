@@ -3,7 +3,11 @@ import { useState } from "react"
 
 function App() {
 
-  const [name, ]
+  const [name, setName] = useState();
+
+  function handleChange(e){
+    
+  }
  
   return (
     <form action="" method="post">
