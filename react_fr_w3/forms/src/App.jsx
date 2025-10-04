@@ -18,6 +18,7 @@ function App() {
       <input type="text" value={age} onChange={handleChange}/>
 
       <input type="submit" value="Submit"/>
+      
     </form>
   )
 }
