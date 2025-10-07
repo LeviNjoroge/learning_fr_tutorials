@@ -12,7 +12,7 @@ function App() {
   return (
     <form action="" method="post">
       <label htmlFor="name">Enter your name: </label>
-      <input type="text" value={name} on/>
+      <input type="text" value={name}/>
 
       <label htmlFor="name">Enter your age: </label>
       <input type="text" value={age} onChange={handleChange}/>
