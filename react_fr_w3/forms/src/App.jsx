@@ -11,6 +11,7 @@ function App() {
  
   return (
     <form action="" method="post">
+      <h2>Reg form</h2>
       <label htmlFor="name">Enter your name: </label>
       <input type="text" value={name}/>
 
