@@ -3,7 +3,7 @@ import { useState } from "react"
 
 function App() {
 
-  const [name, setName] = useState();
+  const [name, age, email, setName] = useState();
 
   function handleChange(e){
     setName(e.target.value);
@@ -21,6 +21,10 @@ function App() {
       <input type="text" value={email}/>
 
       <input type="submit" value="Submit" onSubmit={handleChange}/>
+
+      <p>
+        Hi {name}, your email is {email}, and DOB is {getYear(new Date) - age}
+      </p>
     </form>
   )
 }
