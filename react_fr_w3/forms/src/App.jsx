@@ -20,7 +20,7 @@ function App() {
       <label htmlFor="name">Enter your email: </label>
       <input type="text" value={email} onChange={handleChange}/>
 
-      <input type="submit" value="Submit" onSubmit=/>
+      <input type="submit" value="Submit" onSubmit={handleChange}/>
     </form>
   )
 }
