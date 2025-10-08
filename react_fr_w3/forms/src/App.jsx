@@ -14,10 +14,10 @@ function App() {
       <label htmlFor="name">Enter your name: </label>
       <input type="text" value={name}/>
 
-      <label htmlFor="name">Enter your age: </label>
+      <label htmlFor="age">Enter your age: </label>
       <input type="text" value={age}/>
 
-      <label htmlFor="name">Enter your email: </label>
+      <label htmlFor="email">Enter your email: </label>
       <input type="text" value={email}/>
 
       <input type="submit" value="Submit" onSubmit={handleChange}/>
