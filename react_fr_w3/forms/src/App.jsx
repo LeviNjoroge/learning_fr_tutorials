@@ -3,7 +3,11 @@ import { useState } from "react"
 
 function App() {
 
-  const [name, age, email, setName] = useState();
+  const [values, setName] = useState({
+    name: "",
+    age: "",
+    email: ""
+  });
 
   function handleChange(e){
     setName(e.target.value);
@@ -13,18 +17,18 @@ function App() {
     <form>
       <h2>Reg form</h2>
       <label htmlFor="name">Enter your name: <span color="red">*</span></label>
-      <input type="text" value={name}/> <br />
+      <input type="text" value={name} onChange={handleChange}/> <br />
 
       <label htmlFor="age">Enter your age: </label>
-      <input type="text" value={age}/> <br />
+      <input type="number" onChange={handleChange}/> <br />
 
       <label htmlFor="email">Enter your email: </label>
-      <input type="text" value={email}/>
+      <input type="email" onChange={handleChange}/> <br />
 
-      <input type="submit" value="Submit" onSubmit={handleChange}/>
+      <input type="submit" value="Submit" onSubmit={handleChange}/> <br />
 
       <p>
-        Hi {name}, your email is {email}, and age is {age}
+        
       </p>
     </form>
   )
