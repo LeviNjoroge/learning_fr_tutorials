@@ -10,7 +10,7 @@ function App() {
   });
 
   function handleChange(e){
-    set
+    getValues()
   }
  
   return (
