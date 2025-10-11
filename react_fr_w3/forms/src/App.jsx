@@ -10,7 +10,7 @@ function App() {
   });
 
   function handleChange(e){
-    setValues(...values, e.target.value:values)
+    setValues(...values, e.target.value:)
   }
  
   return (
