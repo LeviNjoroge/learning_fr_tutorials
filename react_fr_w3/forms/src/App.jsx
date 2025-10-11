@@ -10,7 +10,7 @@ function App() {
   });
 
   function handleChange(e){
-    geValues(...values, e.target.value:values)
+    setValues(...values, e.target.value:values)
   }
  
   return (
