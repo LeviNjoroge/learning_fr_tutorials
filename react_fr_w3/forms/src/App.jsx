@@ -4,7 +4,7 @@ import { useState } from "react"
 function App() {
 
   const [values, setName] = useState({
-    name: "G",
+    name: "Guse",
     age: "",
     email: ""
   });
