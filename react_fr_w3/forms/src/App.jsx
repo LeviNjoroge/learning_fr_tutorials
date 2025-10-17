@@ -5,7 +5,7 @@ function App() {
 
   const [values, setName] = useState({
     name: "Guest",
-    age: "0",
+    age: "0 yr",
     email: "guest@examplemail.com"
   });
 
