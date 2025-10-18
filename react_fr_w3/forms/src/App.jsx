@@ -6,7 +6,7 @@ function App() {
   const [values, setName] = useState({
     name: "Guest",
     age: "",
-    email: "example email"
+    email: "example email here"
   });
 
   function handleChange(e){
