@@ -17,7 +17,7 @@ function Lists() {
     // if you want to filter:
     // use the filter method as follows;
     // arr.fliter(arrayElement => condition)
-    
+    const LowCalFruits = fruits.filter(fruit => fil)
 
 
     const renderFruits = fruits.map(fruit => <li key={fruit.id}> {fruit.name}: <b>{fruit.calories}</b></li>);
