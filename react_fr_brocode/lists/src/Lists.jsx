@@ -15,7 +15,7 @@ function Lists() {
     fruits.sort((a, b) => a.name.localeCompare(b.name))
 
     // if you want to filter:
-    
+    // use the filter method as follows, arr.fliter(arrayElemeny)
 
     const renderFruits = fruits.map(fruit => <li key={fruit.id}> {fruit.name}: <b>{fruit.calories}</b></li>);
 
