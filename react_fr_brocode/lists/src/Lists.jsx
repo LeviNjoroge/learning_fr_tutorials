@@ -14,6 +14,9 @@ function Lists() {
     //by fruit names
     fruits.sort((a, b) => a.name.localeCompare(b.name))
 
+    // if you want to filter:
+    
+
     const renderFruits = fruits.map(fruit => <li key={fruit.id}> {fruit.name}: <b>{fruit.calories}</b></li>);
 
     return(
