@@ -16,8 +16,8 @@ function Lists() {
 
     // if you want to filter:
     // use the filter method as follows;
-    // arr.fliter(arrayElement => condition)
-    const LowCalFruits = fruits.filter(fruit => fruit.calories < 100); // this now stores items with 'calories' lesser than 100
+    // arr.filter(arrayElement => condition)
+    const LowCalFruits = LowCalFruits.filter(LowCalFruit => LowCalFruit.calories < 100); // this now stores items with 'calories' lesser than 100
 
     const renderFruits = fruits.map(fruit => <li key={fruit.id}> {fruit.name}: <b>{fruit.calories}</b></li>);
 
