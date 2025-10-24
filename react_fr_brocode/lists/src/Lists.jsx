@@ -22,7 +22,7 @@ function Lists() {
     const renderFruits = fruits.map(fruit => <li key={fruit.id}> {fruit.name}: <b>{fruit.calories}</b></li>);
 
     return(
-        <ol>{renderFruits}</ol>
+        <ol>{LowCalFruits}</ol>
     );
 }
 
