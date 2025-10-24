@@ -24,6 +24,7 @@ function App() {
     <>
     {fruits.length > 0 && <Lists items={fruits} category="Fruits"/> }
     {vegetables.length > 0 && <Lists items={vegetables} category="Vegetables"/>}
+    <Lists></Lists>
     </>
   );
 }

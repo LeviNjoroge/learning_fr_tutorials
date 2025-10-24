@@ -1,8 +1,10 @@
 
-function Lists(props) {
+function Lists({
+    category="Category",
+    items=[]
+}) {
 
-    const fruits = props.items;
-    const category = props.category;
+    const fruits = items;
 
     // if you wanna sort:
     //#by calories
