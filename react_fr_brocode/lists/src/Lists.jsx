@@ -5,19 +5,20 @@ function Lists() {
         {id: 2,name: "Pineapple", calories: 122}, 
         {id: 3,name: "Kiwi", calories: 43}, 
         {id: 4,name: "Banana", calories: 54}, 
-        {id: 5,name: "Coconut", calories: 201}
+        {id: 5,name: "Coconut", calories: 201},
+        {id: 6,name: "Mango", calories: 65}
     ];
 
     // if you wanna sort:
-    //by calories
+    //#by calories
     fruits.sort((a, b) => (a.calories - b.calories));
-    //by fruit names
-    fruits.sort((a, b) => a.name.localeCompare(b.name))
+    //#by fruit names
+    // fruits.sort((a, b) => a.name.localeCompare(b.name))
 
     // if you want to filter:
     // use the filter method as follows;
     // arr.filter(arrayElement => condition)
-    const LowCalFruits = LowCalFruits.filter(LowCalFruit => LowCalFruit.calories < 100); // this now stores items with 'calories' lesser than 100
+    const LowCalFruits = fruits.filter(LowCalFruit => LowCalFruit.calories < 100); // this now stores items with 'calories' lesser than 100
 
     const renderFruits = LowCalFruits.map(fruit => <li key={fruit.id}> {fruit.name}: <b>{fruit.calories}</b></li>);
 
