@@ -1,13 +1,8 @@
 
-function Lists() {
-    const fruits = [
-        {id: 1,name: "Apple", calories: 143},
-        {id: 2,name: "Pineapple", calories: 122}, 
-        {id: 3,name: "Kiwi", calories: 43}, 
-        {id: 4,name: "Banana", calories: 54}, 
-        {id: 5,name: "Coconut", calories: 201},
-        {id: 6,name: "Mango", calories: 65}
-    ];
+function Lists(props) {
+
+    const fruits = props.items;
+    const category = props.category;
 
     // if you wanna sort:
     //#by calories
@@ -18,12 +13,15 @@ function Lists() {
     // if you want to filter:
     // use the filter method as follows;
     // arr.filter(arrayElement => condition)
-    const LowCalFruits = fruits.filter(LowCalFruit => LowCalFruit.calories < 100); // this now stores items with 'calories' lesser than 100
+    // const LowCalFruits = fruits.filter(LowCalFruit => LowCalFruit.calories < 100); // this now stores items with 'calories' lesser than 100
 
-    const renderFruits = LowCalFruits.map(fruit => <li key={fruit.id}> {fruit.name}: <b>{fruit.calories}</b></li>);
+    const renderFruits = fruits.map(fruit => <li key={fruit.id}> {fruit.name}: <b>{fruit.calories}</b></li>);
 
     return(
-        <ol>{renderFruits}</ol>
+        <>
+            <h2>{category}</h2>
+            <ol>{renderFruits}</ol>
+        </>
     );
 }
 
