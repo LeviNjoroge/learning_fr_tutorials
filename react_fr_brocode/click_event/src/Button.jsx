@@ -3,7 +3,7 @@ function Button(){
 
     return (
         <>
-        
+            <button>Click Moi 🙂</button>
         </>
     );
 }
