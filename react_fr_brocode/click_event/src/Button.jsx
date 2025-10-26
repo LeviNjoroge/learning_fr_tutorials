@@ -7,7 +7,7 @@ function Button(){
 
     return (
         <>
-            <button >Click Moi 🙂</button>
+            <button onClick={eventHandler}>Click Moi 🙂</button>
         </>
     );
 }
