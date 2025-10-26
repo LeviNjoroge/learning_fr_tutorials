@@ -2,12 +2,12 @@
 function Button(){
 
     const eventHandler = () =>{
-        console.log("")
+        console.log("Ouch!");
     }
 
     return (
         <>
-            <button>Click Moi 🙂</button>
+            <button >Click Moi 🙂</button>
         </>
     );
 }
