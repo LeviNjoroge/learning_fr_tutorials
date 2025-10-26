@@ -1,7 +1,9 @@
 
 function Button(){
 
-    const 
+    const eventHandler = () =>{
+        console.log("")
+    }
 
     return (
         <>
