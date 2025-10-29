@@ -8,7 +8,7 @@ function Button(){
             console.log(`You clicked me ${count} time/s!`);
         }
         else{
-            console.log("That's ")
+            console.log("That's enough! Stop clicking me!");
         }
     }
 
