@@ -1,6 +1,7 @@
 
 function Button(){
 
+    let c
     const eventHandler = () =>{
         console.log("Ouch!");
     }
