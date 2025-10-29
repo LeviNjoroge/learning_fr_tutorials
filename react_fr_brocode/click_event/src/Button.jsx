@@ -3,7 +3,13 @@ function Button(){
 
     let count = 0;  
     const eventHandler = () =>{
-        console.log("Ouch!");
+        if(count <3){
+            count ++;
+            console.log(`You clicked me ${count} time/s!`);
+        }
+        else{
+            const
+        }
     }
 
     return (
