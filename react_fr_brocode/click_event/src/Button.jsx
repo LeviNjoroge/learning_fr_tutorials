@@ -5,7 +5,7 @@ function Button(){
     const eventHandler = () =>{
         if(count <3){
             count ++;
-            console.log(`You clicked me ${count} time/s!`);
+            console.log(`You clicked me ${count} time(s)!`);
         }
         else{
             console.log("That's enough! Stop clicking me!");
