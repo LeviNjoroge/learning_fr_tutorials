@@ -3,7 +3,7 @@ function Button(){
 
     let count = 0;  
     const eventHandler = () =>{
-        if(count <3){
+        if(count <5){
             count ++;
             console.log(`You clicked me ${count} time(s)!`);
         }
