@@ -1,7 +1,7 @@
 
 function Button(){
 
-    let count = 0;  // initializing counter
+    let count = 0;  // initializing counter at zero
     const eventHandler = () =>{
         if(count <5){
             count ++;
