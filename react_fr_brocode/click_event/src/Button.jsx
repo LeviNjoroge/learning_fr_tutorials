@@ -12,7 +12,7 @@ function Button(){
         } 
     }
 
-    const handleClick = (event) => console.log()
+    const handleClick = (event) => console.log(event)
     return (
         <>
             <button onClick={eventHandler}>Click Moi 🙂</button>
