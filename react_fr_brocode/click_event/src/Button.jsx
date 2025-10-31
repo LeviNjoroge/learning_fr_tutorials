@@ -12,10 +12,10 @@ function Button(){
         } 
     }
 
-    const handleClick = (event) => console.log(event)
+    const handleClick = (event) => console.log(event);
     return (
         <>
-            <button onClick={eventHandler}>Click Moi 🙂</button>
+            <button onClick={handleClick}>Click Moi 🙂</button>
         </>
     );
 }
