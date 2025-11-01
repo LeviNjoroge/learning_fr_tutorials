@@ -12,7 +12,7 @@ function Button(){
         } 
     }
 
-    //
+    //creatinga click event handler
     const handleClick = (event) => console.log(event);
 
     return (
