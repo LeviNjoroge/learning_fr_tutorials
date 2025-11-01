@@ -15,7 +15,7 @@ function Button(){
     const handleClick = (event) => console.log(event);
     return (
         <>
-            <button onClick={handleClick}>Click Moi 🙂</button>
+            <button onClick={handleClick()}>Click Moi 🙂</button>
         </>
     );
 }
