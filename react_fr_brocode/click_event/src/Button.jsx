@@ -13,7 +13,7 @@ function Button(){
     }
 
     //creatinga click event handler
-    const handleClick = (event) => console.log(eventtarget);
+    const handleClick = (event) => console.log(eventtarget.TextContent);
 
     return (
         <>
