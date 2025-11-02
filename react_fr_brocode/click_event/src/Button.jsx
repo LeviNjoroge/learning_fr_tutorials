@@ -13,7 +13,7 @@ function Button(){
     }
 
     //creatinga click event handler
-    const handleClick = (event) => eventtarget.TextContent;
+    const handleClick = (event) => eventtarget.TextContent="OUCH!";
 
     return (
         <>
