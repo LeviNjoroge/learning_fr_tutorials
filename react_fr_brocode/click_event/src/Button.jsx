@@ -21,7 +21,7 @@ function Button(){
         } 
         else{ 
             console.log("That's enough! Stop clicking me!"); 
-            event.target.textContent="STOP IT";
+            event.target.textContent="STOP IT ⁉";
         } 
     };
 
