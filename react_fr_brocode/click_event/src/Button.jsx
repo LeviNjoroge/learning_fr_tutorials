@@ -29,7 +29,7 @@ function Button(){
 
     return (
         <>
-            <button onClick={handleClick}>Click Moi 🙂</button>
+            <button onClick={handleClick()}>Click Moi 🙂</button>
         </>
     );
 }
