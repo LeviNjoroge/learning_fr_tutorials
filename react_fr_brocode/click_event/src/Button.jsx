@@ -23,7 +23,7 @@ function Button(){
         else{ 
             console.log("That's enough! Stop clicking me!"); 
             event.target.textContent="STOP IT ⁉";
-            button.style.display = "none";
+            // button.style.display = "none";
         } 
     };
 
