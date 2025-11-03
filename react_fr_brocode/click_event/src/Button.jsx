@@ -13,7 +13,17 @@ function Button(){
     }
 
     //creatinga click event handler
-    const handleClick = (event) => ;
+    const handleClick = (event) => {
+        event.target.textContent="OUCH! 😖";
+        if(count <5){ 
+            count ++; 
+            console.log(`You clicked me ${count} time(s)!`); 
+        } 
+        else{ 
+            console.log("That's enough! Stop clicking me!"); 
+            event.target.textContent="STOP";
+        } 
+    };
 
     return (
         <>
