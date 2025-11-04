@@ -23,13 +23,13 @@ function Button(){
         else{ 
             console.log("That's enough! Stop clicking me!"); 
             event.target.textContent="STOP IT ⁉";
-            // button.style.display = "none";
+            event.target.style.display = "none";
         } 
     };
 
     return (
         <>
-            <button onClick={(e) => handleCLick(e)}>Click Moi 🙂</button>
+            <button onClick={(e)=>handleClick(e)}>Click Moi 🙂</button>
         </>
     );
 }
