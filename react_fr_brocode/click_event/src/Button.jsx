@@ -20,12 +20,15 @@ function Button(){
         if(count <3){ 
             count ++; 
             message = `You clicked me ${count} time(s)!`;
+            console.log(message);
 
         } 
         else{ 
-            message = "That's enough! Stop clicking me!"; 
+            message = "That's enough! I'm outa here!"; 
+            console.log(message);
             event.target.textContent="STOP IT ⁉";
-            event.target.style.display = "none";
+            const disappearButton = () => event.target.style.display = "none"
+            setTimeout(()=>disappearButton, 1000)
         } 
     };
 
