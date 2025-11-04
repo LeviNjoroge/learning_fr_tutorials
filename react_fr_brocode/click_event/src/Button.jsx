@@ -19,11 +19,11 @@ function Button(){
         event.target.textContent="OUCH! 😖";
         if(count <3){ 
             count ++; 
-            console.log(`You clicked me ${count} time(s)!`);
+            message = `You clicked me ${count} time(s)!`;
 
         } 
         else{ 
-            console.log("That's enough! Stop clicking me!"); 
+            message = "That's enough! Stop clicking me!"; 
             event.target.textContent="STOP IT ⁉";
             event.target.style.display = "none";
         } 
