@@ -1,7 +1,7 @@
 
 function ProfilePic(){
 
-    const imageUrl = "./assets/pic.jpg";
+    const imageUrl = "./src/assets/pic.jpg";
 
     const handleClick = (event) => {
         event.target.style.display = "none";
@@ -9,7 +9,7 @@ function ProfilePic(){
 
     return (
         <>
-            <img onClick={handleClick} src={imageUrl} alt="An image of a man standing in the rain" />
+            <img onClick={handleClick} src={imageUrl} alt="An image of a man standing in a beem of light"/>
         </>
     );
 }

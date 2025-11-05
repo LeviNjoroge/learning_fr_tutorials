@@ -6,12 +6,21 @@ const mysql = require('mysql2');
 const conn = mysql.createConnection({
     host: 'localhost',
     user: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE
 });
 
 conn.connect((err)=>{
     if(err) throw err;
-    console.log("Database connected")
+    console.log("Database connected: "+process.env.DB_DATABASE)
+})
+
+let allStudents;
+conn.query('SELECT fname FROM students',(err, result)=>{
+    if(err) throw err;
+    console.log('query worked!');
+    console.log(result)
+    allStudents = result;
 })
 
 http.createServer(function (req, res) {
