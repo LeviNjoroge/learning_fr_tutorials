@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 function Counter(){
 
-    const [count, setCount] = useState(0);
+    let [count, setCount] = useState(0);
 
     const decreaseCounter = () => {
         setCount(count - 1);
