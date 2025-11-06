@@ -18,10 +18,10 @@ function Counter(){
 
     return(
         <div className="counter">
-            <h1>{count}</h1>
-            <button onClick={decreaseCounter} title='decrease counter'>➖</button>
-            <button onClick={increaseCounter} title='increase counter'>➕</button>
-            <button onClick={resetCounter} title='reset counter'>♻</button>
+            <div className="count"><p>{count}</p></div> <br />
+            <button onClick={decreaseCounter} title='decrease counter' className='decreaseCounterButton'>➖</button>
+            <button onClick={resetCounter} title='reset counter' className='resetCounterButton'>♻</button>
+            <button onClick={increaseCounter} title='increase counter' className='increaseCounterButton'>➕</button>
         </div>
     );
 }

@@ -1,0 +1,31 @@
+button{
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 40px;
+    margin: 5px;
+}
+
+.decreaseCounterButton{
+    background-color: hwb(0 0% 0% / 0.5);
+}
+
+.resetCounterButton{
+    background-color: hwb(240 0% 0% / 0.5);
+}
+
+.increaseCounterButton{
+    background-color: rgba(0, 128, 0, 0.5);
+}
+
+.count{
+    width: 330px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    background-color: rgb(166, 213, 255);
+    align-items: center;
+    align-content: center;
+    margin: 0px;
+}
