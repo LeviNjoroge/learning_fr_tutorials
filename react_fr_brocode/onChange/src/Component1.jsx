@@ -1,4 +1,4 @@
-//
+// getting ready
 
 function Component1(){
 
