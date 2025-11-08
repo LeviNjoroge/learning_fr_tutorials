@@ -1,5 +1,5 @@
 
-
+import {  } from "Component1";
 function App(){
 
   return(
