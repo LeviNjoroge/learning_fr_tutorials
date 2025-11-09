@@ -1,6 +1,6 @@
 // will be going through onChange event handler
 // this is mostly used in forms elements
-// what it does is that it triggers a function every time a value changes
+// what it does is that it triggers a function every time a value of an input changes
 
 function Component1(){
 
