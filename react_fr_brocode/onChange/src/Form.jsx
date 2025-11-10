@@ -5,6 +5,19 @@
 import React, { useState } from 'react';
 
 function Component1(){
+    let formData = [
+        {name:"Guest"},
+        {age:''},
+        {gender:''},
+        {school:''},
+        {bio:''}
+    ];
+
+    const [data, setData] = useState();
+
+    function handleChange(){
+        setData(event.target.value);
+    }
   const [name, setName] = useState('Guest');
   const [age, setAge] = useState(0);
   const [gender, setGender] = useState("N/A");
