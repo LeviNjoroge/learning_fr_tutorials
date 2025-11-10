@@ -1,9 +1,8 @@
-
-
+import colorPicker from "./colorPicker";
 
 function App() {
   <>
-  
+    <colorPicker/>
   </>
 }
 
