@@ -44,11 +44,11 @@ function Component1(){
         <div className="gender">
           <label htmlFor="Gender:">Gender:</label> <br />
             <label htmlFor="Male"> Male
-              <input type="radio" name="gender" id="gender" value="Male" checked={gender = "Male"} onChange={handleGenderChange}/></label>
+              <input type="radio" name="gender" id="gender" value="Male" checked={gender === "Male"} onChange={handleGenderChange}/></label>
             <label htmlFor="Female">Female
-              <input type="radio" name="gender" id="gender" value="Female" checked={gender = "Female"} onChange={handleGenderChange}/></label>
+              <input type="radio" name="gender" id="gender" value="Female" checked={gender === "Female"} onChange={handleGenderChange}/></label>
             <label htmlFor="Prefer not to say"> Perfre not to say
-              <input type="radio" name="gender" id="gender" value="Other" checked={gender = "Other"} onChange={handleGenderChange}/></label>
+              <input type="radio" name="gender" id="gender" value="Other" checked={gender === "Other"} onChange={handleGenderChange}/></label>
         </div>
         <div className="school">
           <label htmlFor="school">Enter your school:</label>
@@ -61,7 +61,7 @@ function Component1(){
             <option value="SASS">School of Arts and Social Sciences</option>
             <option value="other" title="Your school is not included? Write it below">other</option>
           </select> <br />
-          <input type="text" name="otherSchools" id="otherSchools" style={{display:'none'}} placeholder='Enter your school'/>
+          {/* <input type="text" name="otherSchools" id="otherSchools" style={{display:'none'}} placeholder='Enter your school'/> */}
         </div>
         <div className="bio">
           <textarea name="bio" id="bio" placeholder="Tell us a bit about yourself..." onChange={handleBioChange}></textarea> <br />
