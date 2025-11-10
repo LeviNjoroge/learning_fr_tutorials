@@ -2,7 +2,10 @@
 // this is mostly used in forms elements
 // what it does is that it triggers a function every time a value of an input changes
 
+import React, { useState } from 'react';
+
 function Component1(){
+  const [name, setName] = useState('Guest');
 
   return(
     <>
@@ -16,12 +19,12 @@ function Component1(){
           <input type="number" name="age" id="age" /> <br />
         </div>
         <div className="gender">
-          <label htmlFor="Gender:"></label>
-            <label htmlFor="Male">
+          <label htmlFor="Gender:">Gender:</label> <br />
+            <label htmlFor="Male"> Male
               <input type="radio" name="gender" id="gender" value="Male"/></label>
-            <label htmlFor="Female">
+            <label htmlFor="Female">Female
               <input type="radio" name="gender" id="gender" value="Female"/></label>
-            <label htmlFor="Prefer not to say">
+            <label htmlFor="Prefer not to say"> Perfre not to say
               <input type="radio" name="gender" id="gender" value="N/A"/></label>
         </div>
         <div className="school">
