@@ -6,7 +6,13 @@ function Component1(){
 
   return(
     <>
-
+      <form>
+        <label htmlFor="name">Name:</label>
+        <input type="text" name="name" id="name"/> <br />
+        <label htmlFor="age">Age:</label>
+        <input type="number" name="age" id="age" /> <br />
+        <textarea name="bio" id="bio" placeholder=""></textarea>
+      </form>
     </>
   );
 }
