@@ -9,7 +9,7 @@ function Component1(){
   const [age, setAge] = useState(0);
   const [gender, setGender] = useState("N/A");
   const [school, setSchool] = useState("N/A");
-  const [bio, setBio] = useState("");
+  const [bio, setBio] = useState(`I am ${name}`);
 
   function handleNameChange(event){
     setName(event.target.value);
@@ -53,12 +53,13 @@ function Component1(){
         <div className="school">
           <label htmlFor="school">Enter your school:</label>
           <select name="school" id="school" onChange={handleSchoolChange}>
-            <option value="SIST">School of Information Science and Technology</option>
-            <option value="Law">School of Law</option>
-            <option value="Agric">School of Agriculture</option>
-            <option value="Health">School of Health Sciences</option>
-            <option value="SPAS">School of Pure and Applied Sciences</option>
-            <option value="SASS">School of Arts and Social Sciences</option>
+            <option value="">Select an option</option>
+            <option value="School of Information Science and Technology" >School of Information Science and Technology</option>
+            <option value="School of Law">School of Law</option>
+            <option value="School of Agriculture">School of Agriculture</option>
+            <option value="School of Health Sciences">School of Health Sciences</option>
+            <option value="School of Pure and Applied Sciences">School of Pure and Applied Sciences</option>
+            <option value="School of Arts and Social Sciences">School of Arts and Social Sciences</option>
             <option value="other" title="Your school is not included? Write it below">other</option>
           </select> <br />
           {/* <input type="text" name="otherSchools" id="otherSchools" style={{display:'none'}} placeholder='Enter your school'/> */}
