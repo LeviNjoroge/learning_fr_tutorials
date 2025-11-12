@@ -5,6 +5,10 @@ import React, { useState } from 'react';
 function Component1(){
 
     const [name, setName] = useState("Guest");
+    function updateName(){
+        setName("Andrew Kibe");
+    }
+    // there is a better way to do the above
 
     return(
         
