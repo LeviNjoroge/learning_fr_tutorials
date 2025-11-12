@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 
 function Component1(){
 
-    const [name, setName] = useState()
+    const [name, setName] = useState("");
+    
     return(
         <>
         
