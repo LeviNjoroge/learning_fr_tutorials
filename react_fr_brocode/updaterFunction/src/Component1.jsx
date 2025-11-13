@@ -28,7 +28,12 @@ function Component1(){
         setCount(c => c + 1);
         setCount(c => c + 1);
     }
-    // 
+    // this now increments the count by 3
+
+    // it is then a good practice to do the single incremental as follows:
+    function newSingleIncrementCount(){
+        setCount(c => c + 1);
+    }
 
     return(
         
