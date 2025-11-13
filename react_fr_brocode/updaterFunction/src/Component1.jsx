@@ -12,7 +12,7 @@ function Component1(){
         setCount(count + 1);
     }
 
-    // what if 
+    // what if you need to incremet more than once? or you need to run the setCount more than once?
 
 
     return(
