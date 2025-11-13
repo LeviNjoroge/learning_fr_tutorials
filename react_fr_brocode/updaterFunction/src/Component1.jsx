@@ -13,6 +13,13 @@ function Component1(){
     }
 
     // what if you need to incremet more than once? or you need to run the setCount more than once?
+    function tradMultiIncrementCount(){
+        setCount(count + 1);
+        setCount(count + 1);
+        setCount(count + 1);
+    }
+    // well, you will expect this to increment the count by 3 since the setcount has been run three times right?
+    
 
 
     return(
