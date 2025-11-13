@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 
 function Component1(){
 
-    const [count, setCount] = useState();
+    const [count, setCount] = useState(0);
     
     // the traditional way:
     function tradSingleIncrementCount(){
@@ -48,7 +48,7 @@ function Component1(){
             <button onClick={newSingleIncrementCount}>New Single Increment</button>
             <button onClick={newMultiIncrementCount}>New Multi Increment</button>
             <br />
-            <button>Reset</button>
+            <button onClick={resetCount}>Reset</button>
         </>
     );
 }
