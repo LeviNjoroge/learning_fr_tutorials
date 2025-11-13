@@ -35,13 +35,20 @@ function Component1(){
         setCount(c => c + 1);
     }
 
+    function resetCount() {
+        setCount(0);
+    }
+
     return(
         <>
+            <h1>{count}</h1>
             <button onClick={tradSingleIncrementCount}>Trad Single Increment</button>
             <button onClick={tradMultiIncrementCount}>Trad Multi Increment</button>
             <br />
             <button onClick={newSingleIncrementCount}>New Single Increment</button>
             <button onClick={newMultiIncrementCount}>New Multi Increment</button>
+            <br />
+            <button>Reset</button>
         </>
     );
 }
