@@ -5,9 +5,15 @@ import React, { useState } from 'react';
 
 function Component1(){
 
-    const [name, setName] = useState("Guest");
+    const [count, setCount] = useState();
     
-    // there is a better way to do the above
+    // the traditional way:
+    function tradSingleIncrementCount(){
+        setCount(count + 1);
+    }
+
+    // what if 
+
 
     return(
         
