@@ -1,5 +1,5 @@
 // an updater function is used maily when you need to 
-// do multiple state updates and asynchrounous func
+// do multiple state updates and asynchrounous functions
 import React, { useState } from 'react';
 
 function Component1(){
