@@ -1,5 +1,5 @@
-// apparently you can update a useState variable using an 
-// updater function and it is said to be more efficient than passing the data in manually
+// an updater function is used maily when you need to 
+// do multiple state updates and 
 import React, { useState } from 'react';
 
 function Component1(){
