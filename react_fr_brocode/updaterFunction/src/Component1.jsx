@@ -36,9 +36,12 @@ function Component1(){
     }
 
     return(
-        
         <>
-        
+            <button onClick={tradSingleIncrementCount}>Trad Single Increment</button>
+            <button onClick={tradMultiIncrementCount}>Trad Multi Increment</button>
+            <br />
+            <button onClick={newSingleIncrementCount}>New Single Increment</button>
+            <button onClick={newMultiIncrementCount}>New Multi Increment</button>
         </>
     );
 }
