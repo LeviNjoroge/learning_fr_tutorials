@@ -19,8 +19,16 @@ function Component1(){
         setCount(count + 1);
     }
     // well, you will expect this to increment the count by 3 since the setcount has been run three times right?
-    
+    // that is not the case here, react tends to batch all the ops in a function once and run them all at once before updating
+    // hence, that is just like hitting the refresh button thrice, you'll be itteratively adding the count from 0 to 1, 3 times
 
+    // now, use the updater function for the same
+    function newMultiIncrementCount(){
+        setCount(c => c + 1);
+        setCount(c => c + 1);
+        setCount(c => c + 1);
+    }
+    // 
 
     return(
         
