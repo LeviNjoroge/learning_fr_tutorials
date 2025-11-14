@@ -13,13 +13,18 @@ import React, { useState } from 'react';
 
 function Obj(){
     const [car, setCar] = useState({
-        year:2025,
-        
+        year: getYear(now()),
+        model:"TX",
+        color: "Red"
     });
 
     return(
         <>
-        
+            <div className="form">
+                <label htmlFor="yaer">Year: </label> <input type="number" name="year" id="year" value={car.color}/> <br />
+                <label htmlFor="model">Model: </label><input type="text" name='model' value={car.model}/> <br />
+                <label htmlFor="color">Color: </label><input type="text" name='color' value={car.color}/> <br />
+            </div>
         </>
     );
 }

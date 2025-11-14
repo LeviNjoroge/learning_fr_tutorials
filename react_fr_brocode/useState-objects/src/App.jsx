@@ -1,8 +1,8 @@
 
-import Obj from "./Obj"
+import Obj from "./Obj";
 function App(){
   <>
-
+    <Obj/>
   </>
 }
 
