@@ -9,26 +9,20 @@
 // year of production, model, color
 // after setting default values for these, we are going to update the value in a form in a website
 
-// import React, { useState } from 'react';
-
-// function Obj(){
-//     const [car, setCar] = useState(
-//     {year: 0, model:"TX", color: "Red"});
-
-//     return(
-//         <>
-//             <div className="form">
-//                 <label htmlFor="yaer">Year: </label> <input type="number" name="year" id="year" value={car.color}/> <br />
-//                 <label htmlFor="model">Model: </label><input type="text" name='model' value={car.model}/> <br />
-//                 <label htmlFor="color">Color: </label><input type="text" name='color' value={car.color}/> <br />
-//             </div>
-//         </>
-//     );
-// }
+import React, { useState } from 'react';
 
 function Obj(){
+    const [car, setCar] = useState({year: 1999, model:"TX", color: "Red"});
+
     return(
-        "Hello World"
+        <>
+            <div className="form">
+                <p>I have selected a {car.color}, {car.year} model of a {car.model}</p>
+                <label htmlFor="yaer">Year: </label> <input type="number" name="year" id="year" value={car.color}/> <br />
+                <label htmlFor="model">Model: </label><input type="text" name='model' value={car.model}/> <br />
+                <label htmlFor="color">Color: </label><input type="text" name='color' value={car.color}/> <br />
+            </div>
+        </>
     );
 }
 
