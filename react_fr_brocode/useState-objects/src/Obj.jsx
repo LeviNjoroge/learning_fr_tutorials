@@ -31,11 +31,11 @@ function Obj(){
             <div className="form">
                 <p>I have selected a {car.color}, {car.year} model of a {car.model}</p>
                 <label htmlFor="yaer">Year: </label> 
-                    <input onClick={updateYear} type="number" name="year" id="year" value={car.color}/> <br />
+                    <input onChange={updateYear} type="number" name="year" id="year"/> <br />
                 <label htmlFor="model">Model: </label>
-                    <input onClick={updateModel} type="text" name='model' value={car.model}/> <br />
+                    <input onChange={updateModel} type="text" name='model' value={car.model}/> <br />
                 <label htmlFor="color">Color: </label>
-                    <input onClick={updateColor} type="text" name='color' value={car.color}/> <br />
+                    <input onChange={updateColor} type="text" name='color' value={car.color}/> <br />
             </div>
         </>
     );
