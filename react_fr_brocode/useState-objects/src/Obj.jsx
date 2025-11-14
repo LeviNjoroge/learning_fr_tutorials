@@ -12,11 +12,8 @@
 import React, { useState } from 'react';
 
 function Obj(){
-    const [car, setCar] = useState({
-        year: getYear(now()),
-        model:"TX",
-        color: "Red"
-    });
+    const [car, setCar] = useState(
+    {year: getYear(now()), model:"TX", color: "Red"});
 
     return(
         <>
