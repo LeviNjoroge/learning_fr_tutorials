@@ -15,7 +15,7 @@ function Obj(){
     const [car, setCar] = useState({year: 1999, model:"TX", color: "Red"});
 
     function updateYear(event){
-        setCar(c => ({...c, year: event.target.value}))
+        setCar(c => ({...c, year: event.target.value})) // NOTE THIS
     }
 
     function updateModel(event){
