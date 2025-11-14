@@ -1,9 +1,11 @@
 
 import Obj from "./Obj";
 function App(){
-  <>
-    <Obj/>
-  </>
+  return(
+    <>
+      <Obj/>
+    </>
+  );
 }
 
 export default App;
