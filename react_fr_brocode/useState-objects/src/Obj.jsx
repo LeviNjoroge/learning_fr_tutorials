@@ -14,6 +14,18 @@ import React, { useState } from 'react';
 function Obj(){
     const [car, setCar] = useState({year: 1999, model:"TX", color: "Red"});
 
+    function updateYear(event){
+        setCar(c => ({...c, year: event.target.value}))
+    }
+
+    function updateModel(event){
+        setCar(c => ({...c, model: event.target.value}))
+    }
+
+    function updateColor(event){
+        setCar(c => ({...c, color: event.target.value}))
+    }
+
     return(
         <>
             <div className="form">
