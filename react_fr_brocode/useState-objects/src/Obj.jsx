@@ -30,9 +30,12 @@ function Obj(){
         <>
             <div className="form">
                 <p>I have selected a {car.color}, {car.year} model of a {car.model}</p>
-                <label htmlFor="yaer">Year: </label> <input type="number" name="year" id="year" value={car.color}/> <br />
-                <label htmlFor="model">Model: </label><input type="text" name='model' value={car.model}/> <br />
-                <label htmlFor="color">Color: </label><input type="text" name='color' value={car.color}/> <br />
+                <label htmlFor="yaer">Year: </label> 
+                    <input onClick={updateYear} type="number" name="year" id="year" value={car.color}/> <br />
+                <label htmlFor="model">Model: </label>
+                    <input onClick={updateModel} type="text" name='model' value={car.model}/> <br />
+                <label htmlFor="color">Color: </label>
+                    <input onClick={updateColor} type="text" name='color' value={car.color}/> <br />
             </div>
         </>
     );
