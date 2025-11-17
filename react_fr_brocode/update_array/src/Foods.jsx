@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Foods = () =>{
 
-    const [foods, setFoods] = useState([]);
+    const [foods, setFoods] = useState(["Apple", "Banana"]);
 
     // function to remove an item from the array
     function removeFood(){
@@ -16,6 +16,9 @@ const Foods = () =>{
     return(
         <>
             <h2>List of foods</h2>
+            <ul>
+                {foods.map(food=>{<li>{food}</li>})}
+            </ul>
         </>
     );
 }
