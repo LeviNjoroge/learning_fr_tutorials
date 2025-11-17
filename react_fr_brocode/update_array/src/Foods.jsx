@@ -14,7 +14,12 @@ const Foods = () =>{
     function addFood(){
         const newFood = document.getElementById("addFood").value; // create a variable with the value of the input
         document.getElementById("addFood").value = ""; // clear the input
-        setFoods([...foods, newFood]); // add the input value to the array before
+        setFoods(f => [...f, newFood]); // add the input value to the array before
+    }
+
+    // clear foods list
+    function clearFood(){
+        setFoods([]);
     }
     return(
         <>
@@ -23,7 +28,10 @@ const Foods = () =>{
                 {foods.map((food, index)=><li key={index}>{food}</li>)}
             </ul>
             <input type="text" name="addFood" id="addFood" placeholder='Enter food name...'/>
-            <button onClick={addFood} name='addFood'>Add Food</button>
+            <button onClick={addFood}>Add Food</button>
+
+            <br />
+            <button onClick={clearFood}>Clear List</button>
         </>
     );
 }
