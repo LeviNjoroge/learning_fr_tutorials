@@ -14,7 +14,9 @@ const Foods = () =>{
         setFoods()
     }
     return(
-
+        <>
+            <h2>List of foods</h2>
+        </>
     );
 }
 
