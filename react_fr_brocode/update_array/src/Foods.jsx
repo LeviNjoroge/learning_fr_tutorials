@@ -17,7 +17,7 @@ const Foods = () =>{
         <>
             <h2>List of foods</h2>
             <ul>
-                {foods.map(food=><li>{food}</li>)}
+                {foods.map((food, index)=><li key={index}>{food}</li>)}
             </ul>
         </>
     );
