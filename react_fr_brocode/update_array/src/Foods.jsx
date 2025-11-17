@@ -5,9 +5,8 @@ const Foods = () =>{
     const [foods, setFoods] = useState(["Apple", "Banana", "Coconut"]);
 
     // function to remove an item from the array
-    function removeFood(){
-        const getFood = 
-        setFoods()
+    function removeFood(index){
+        setFoods(foods.filter((_, i)=>i !== index));
     }
 
     // function to add an item to the array
@@ -25,7 +24,7 @@ const Foods = () =>{
         <>
             <h2>List of foods</h2>
             <ul>
-                {foods.map((food, index)=><li key={index}>{food}</li>)}
+                {foods.map((food, index)=><li key={index} onClick={() => removeFood(index)}>{food}</li>)}
             </ul>
             <input type="text" name="addFood" id="addFood" placeholder='Enter food name...'/>
             <button onClick={addFood}>Add Food</button>
