@@ -2,16 +2,19 @@ import React, { useState } from 'react';
 
 const Foods = () =>{
 
-    const [foods, setFoods] = useState(["Apple", "Banana"]);
+    const [foods, setFoods] = useState(["Apple", "Banana", "Coconut"]);
 
     // function to remove an item from the array
     function removeFood(){
+        const getFood = 
         setFoods()
     }
 
     // function to add an item to the array
     function addFood(){
-        setFoods()
+        const newFood = document.getElementById("addFood").value; // create a variable with the value of the input
+        document.getElementById("addFood").value = ""; // clear the input
+        setFoods([...foods, newFood]); // add the input value to the array before
     }
     return(
         <>
@@ -19,6 +22,8 @@ const Foods = () =>{
             <ul>
                 {foods.map((food, index)=><li key={index}>{food}</li>)}
             </ul>
+            <input type="text" name="addFood" id="addFood" placeholder='Enter food name...'/>
+            <button onClick={addFood}>Add Food</button>
         </>
     );
 }
