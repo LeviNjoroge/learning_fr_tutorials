@@ -23,7 +23,7 @@ const Foods = () =>{
                 {foods.map((food, index)=><li key={index}>{food}</li>)}
             </ul>
             <input type="text" name="addFood" id="addFood" placeholder='Enter food name...'/>
-            <button onClick={addFood}>Add Food</button>
+            <button onClick={addFood} name='addFood'>Add Food</button>
         </>
     );
 }
