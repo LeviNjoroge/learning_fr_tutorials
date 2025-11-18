@@ -1,7 +1,7 @@
 // an updater function is used for safe updates based on the previous state
 // an updater function is used maily when you need to 
 // do multiple state updates and asynchrounous functions
-// also, to ensure your code is future proof, you can use 
+// also, to ensure your code is future proof, you can use it
 import React, { useState } from 'react';
 
 function Component1(){
