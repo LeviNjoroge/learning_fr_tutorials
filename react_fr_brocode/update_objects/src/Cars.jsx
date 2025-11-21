@@ -10,7 +10,7 @@ function Cars(){
 
     // car functions, add and delete car
     function addCar(){
-
+        setCars(c=>[...c, {carMake, carModel, carYear}]);
     }
 
     function removeCar(){
@@ -36,7 +36,7 @@ function Cars(){
             <div className="cars">
                 <h2>List of Car Models</h2>
                 <ul>
-
+                    {cars.map((car, index)=><li key={index}>{car.map(item => item)}</li>)}
                 </ul>
                 <br />
                 <input type="number" value={carYear} onChange={modifyYear} /> <br />
