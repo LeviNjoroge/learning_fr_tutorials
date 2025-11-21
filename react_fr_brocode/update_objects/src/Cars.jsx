@@ -3,7 +3,9 @@ import React, { useState } from 'react';
 
 function Cars(){
 
-    const 
+    const [cars, setCars] = useState([]);
+    const [carYear, setCarYear] = useState(new Date().getFullYear())
+    
 
     return(
         <>
