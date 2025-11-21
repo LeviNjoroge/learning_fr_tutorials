@@ -34,7 +34,7 @@ function Cars(){
     return(
         <>
             <div className="cars">
-                <h2>List of Cars</h2>
+                <h2>List of Car Models</h2>
                 <ul>
 
                 </ul>
