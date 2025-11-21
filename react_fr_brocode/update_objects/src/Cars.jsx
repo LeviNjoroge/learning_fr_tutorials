@@ -38,10 +38,11 @@ function Cars(){
                 <ul>
 
                 </ul>
-                <input type="number" value={carYear} onChange={modifyYear} />
-                <input type="text" value={carMake} onChange={modifyMake} placeholder='Car Make'/>
-                <input type="text" value={carModel} onChange={modifyModel} placeholder='Car Model'/>
-                <button onClick={addCar}>Add Car</button>
+                <br />
+                <input type="number" value={carYear} onChange={modifyYear} /> <br />
+                <input type="text" value={carMake} onChange={modifyMake} placeholder='Car Make'/> <br />
+                <input type="text" value={carModel} onChange={modifyModel} placeholder='Car Model'/> <br />
+                <button onClick={addCar}>Add Car</button> <br />
             </div>
         </>
     );
