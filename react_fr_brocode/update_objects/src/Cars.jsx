@@ -18,16 +18,16 @@ function Cars(){
     }
 
     // car properties update: Year, Make, Model
-    function modifyYear(){
-
+    function modifyYear(event){
+        setCarYear(event.target.value);
     }
     
-    function modifyMake(){
-
+    function modifyMake(event){
+        setCarMake(event.target.value);
     }
 
-    function modifyModel(){
-
+    function modifyModel(event){
+        setCarModel(event.target.value);
     }
 
 
