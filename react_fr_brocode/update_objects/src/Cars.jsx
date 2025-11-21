@@ -8,8 +8,16 @@ function Cars(){
     const [carMake, setCarMake] = useState("");
     const [carModel, setCarModel] = useState("");
 
-    // car
+    // car functions, add and delete car
+    function addCar(){
 
+    }
+
+    function removeCar(){
+
+    }
+
+    // car properties update: Year, Make, Model
     return(
         <>
         
