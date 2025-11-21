@@ -18,6 +18,19 @@ function Cars(){
     }
 
     // car properties update: Year, Make, Model
+    function modifyYear(){
+
+    }
+    
+    function modifyMake(){
+
+    }
+
+    function modifyModel(){
+
+    }
+
+
     return(
         <>
         
