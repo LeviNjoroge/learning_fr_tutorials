@@ -4,17 +4,18 @@ import React, { useState } from 'react';
 function Cars(){
 
     const [cars, setCars] = useState([]);
-    const [carYear, setCarYear] = useState(new Date().getFullYear())
+    const [carYear, setCarYear] = useState(new Date().getFullYear());
     const [carMake, setCarMake] = useState("");
     const [carModel, setCarModel] = useState("");
 
     // car functions, add and delete car
     function addCar(){
-        setCars(c=>[...c, {carMake, carModel, carYear}]);
+        const newCar = {year:carYear,make:carMake, model:carModel};
+        setCars(c=>[...c, newCar]);
     }
 
-    function removeCar(){
-
+    function removeCar(index){
+        setCars(cars.filter((_,i)=>i!==index));
     }
 
     // car properties update: Year, Make, Model
@@ -36,7 +37,7 @@ function Cars(){
             <div className="cars">
                 <h2>List of Car Models</h2>
                 <ul>
-                    {cars.map((car, index)=><li key={index}>{car.map(item => item)}</li>)}
+                    {cars.map((car, index)=><li key={index} onClick={()=>removeCar(index)}>{car.make}, {car.model}, {car.year}</li>)}
                 </ul>
                 <br />
                 <input type="number" value={carYear} onChange={modifyYear} /> <br />
