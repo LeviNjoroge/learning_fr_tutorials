@@ -34,7 +34,14 @@ function Cars(){
     return(
         <>
             <div className="cars">
-                
+                <h2>List of Cars</h2>
+                <ul>
+
+                </ul>
+                <input type="number" value={carYear} onChange={modifyYear} />
+                <input type="text" value={carMake} onChange={modifyMake} placeholder='Car Make'/>
+                <input type="text" value={carModel} onChange={modifyModel} placeholder='Car Model'/>
+                <button onClick={addCar}>Add Car</button>
             </div>
         </>
     );
