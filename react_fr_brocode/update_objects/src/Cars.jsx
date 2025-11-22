@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+// 
 
+import React, { useState } from 'react';
 
 function Cars(){
 
@@ -12,6 +13,9 @@ function Cars(){
     function addCar(){
         const newCar = {year:carYear,make:carMake, model:carModel};
         setCars(c=>[...c, newCar]);
+        setCarMake("");
+        setCarModel("");
+        setCarYear(new Date().getFullYear())
     }
 
     function removeCar(index){
@@ -37,7 +41,7 @@ function Cars(){
             <div className="cars">
                 <h2>List of Car Models</h2>
                 <ul>
-                    {cars.map((car, index)=><li key={index} onClick={()=>removeCar(index)}>{car.make}, {car.model}, {car.year}</li>)}
+                    {cars.map((car, index)=><li key={index} onClick={()=>removeCar(index)}>{car.year} {car.make} {car.model}</li>)}
                 </ul>
                 <br />
                 <input type="number" value={carYear} onChange={modifyYear} /> <br />
