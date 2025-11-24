@@ -4,7 +4,7 @@
 
 // now lemme go on a date and will come back here in a few hours or maybe tomorrow if all goes well ;)
 
-// here I am, the exact second day
+// here I am, the exact second day, I'm pretty sure that I wont be that proud of this soon
 
 function App(){
 
