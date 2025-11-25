@@ -6,7 +6,7 @@ function ToDoList(){
     const [newTasks, setNewTasks] = useState();
 
     function addTasks(){
-
+        
     }
 
     function removeTasks(event){
@@ -24,7 +24,6 @@ function ToDoList(){
         <>
             <h2>To Do List App</h2>
             
-
         </>
     );
 }
