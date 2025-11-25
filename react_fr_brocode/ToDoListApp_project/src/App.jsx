@@ -4,11 +4,14 @@
 // les go
 
 import ToDOList from "./ToDOList";
+
 function App(){
 
-  return (<>
-    <ToDoList/>
-  </>);
+  return (
+    <>
+      <ToDoList/>
+    </>
+  );
 }
 
 export default App;
