@@ -6,21 +6,26 @@ function ToDoList(){
     const [newTasks, setNewTasks] = useState();
 
     function addTasks(){
+
     }
 
     function removeTasks(event){
+
     }
 
     function moveTaskUp(event){
+
     }
 
     function moveTasksDown(event){
-        
+
     }
 
     return(
         <div className="ToDoListApp">
-
+            <ul>
+                
+            </ul>
         </div>
     );
 }
