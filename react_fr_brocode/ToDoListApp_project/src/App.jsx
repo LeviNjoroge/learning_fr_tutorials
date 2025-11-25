@@ -3,10 +3,11 @@
 // enjoy it, and that, and also try to see what new thing I have learnt while working on this one
 // les go
 
+import ToDOList from "./ToDOList";
 function App(){
 
   return (<>
-  
+    <ToDoList/>
   </>);
 }
 
