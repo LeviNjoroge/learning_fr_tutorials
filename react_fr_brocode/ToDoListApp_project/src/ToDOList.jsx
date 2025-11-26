@@ -24,7 +24,7 @@ function ToDoList(){
     return(
         <div className="ToDoListApp">
             <ul>
-                {tasks.map({}=>)}
+                {tasks.map({task, elements}=><li></li>)}
             </ul>
         </div>
     );
