@@ -24,9 +24,7 @@ function ToDoList(){
     return(
         <div className="ToDoListApp">
             <ul>
-                {<li>
-                    
-                    </li>}
+                {}
             </ul>
         </div>
     );
