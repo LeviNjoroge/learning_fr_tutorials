@@ -23,6 +23,7 @@ function ToDoList(){
 
     return(
         <div className="ToDoList">
+            <h1>To</h1>
             <ul>
                 {tasks.map((task, index)=><li key={index}>{task}</li>)}
             </ul>
