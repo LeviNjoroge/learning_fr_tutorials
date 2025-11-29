@@ -22,7 +22,7 @@ function ToDoList(){
     }
 
     return(
-        <div className="ToDoListApp">
+        <div className="ToDoList">
             <ul>
                 {tasks.map((task, index)=><li key={index}>{task}</li>)}
             </ul>
