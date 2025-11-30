@@ -25,7 +25,7 @@ function ToDoList(){
         <div className="ToDoList">
             <h1>To-Do List</h1>
             <ul>
-                {tasks.map((task, index)=><li key={index}>{task}</li>)
+                {tasks.map((task, index)=><li key={index}>{task}</li>
             </ul>
         </div>
     );
