@@ -28,7 +28,7 @@ function ToDoList(){
             </ul>
             <p>This app offers the following functionalities:
                 <ul>
-                    <li></li>
+                    <li>Adding and removing an item on the list</li>
                 </ul>
             </p>
         </div>
