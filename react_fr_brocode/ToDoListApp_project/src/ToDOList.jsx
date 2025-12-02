@@ -30,7 +30,7 @@ function ToDoList(){
                 <ul>
                     <li>Adding an item to the list</li>
                     <li>Removing an item from the List</li>
-                    <li></li>
+                    <li>Managing its </li>
                 </ul>
             </p>
         </div>
