@@ -26,7 +26,11 @@ function ToDoList(){
             <h1>To-Do List</h1>
             <ul>
             </ul>
-            <p>This app offers the following functionalities</p>
+            <p>This app offers the following functionalities:
+                <ul>
+                    
+                </ul>
+            </p>
         </div>
     );
 }
