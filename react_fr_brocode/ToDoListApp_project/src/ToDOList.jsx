@@ -32,6 +32,7 @@ function ToDoList(){
                     <li>Removing an item from the List</li>
                     <li>Managing its priority/urgency, through moving a task higher up in the list or lower</li>
                 </ul>
+                * more features are to be added soon, 
             </p>
         </div>
     );
