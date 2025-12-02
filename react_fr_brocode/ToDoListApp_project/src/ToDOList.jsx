@@ -25,8 +25,8 @@ function ToDoList(){
         <div className="ToDoList">
             <h1>To-Do List</h1>
             <ul>
-                
             </ul>
+            <p></p>
         </div>
     );
 }
