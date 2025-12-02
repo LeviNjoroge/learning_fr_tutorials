@@ -26,7 +26,7 @@ function ToDoList(){
             <h1>To-Do List</h1>
             <ul>
             </ul>
-            <p>On the aboove app</p>
+            <p>This app offers the following functionalities</p>
         </div>
     );
 }
