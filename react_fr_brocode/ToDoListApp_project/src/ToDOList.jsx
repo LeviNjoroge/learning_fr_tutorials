@@ -28,7 +28,7 @@ function ToDoList(){
             </ul>
             <p>This app offers the following functionalities:
                 <ul>
-                    
+                    <li></li>
                 </ul>
             </p>
         </div>
