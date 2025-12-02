@@ -30,7 +30,7 @@ function ToDoList(){
                 <ul>
                     <li>Adding an item to the list</li>
                     <li>Removing an item from the List</li>
-                    <li>Managing its priority/urgency, </li>
+                    <li>Managing its priority/urgency, through moving a task higher up in the list or lower</li>
                 </ul>
             </p>
         </div>
