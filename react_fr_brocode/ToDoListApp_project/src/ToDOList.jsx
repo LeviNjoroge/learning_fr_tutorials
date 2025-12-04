@@ -32,7 +32,7 @@ function ToDoList(){
                     <li>Removing an item from the List</li>
                     <li>Managing its priority/urgency, through moving a task higher up in the list or lower</li>
                 </ul>
-                <i>*more features are to be added soon, keep calm and be patient. Also, your feedback on the current features and also those you would like see adde</i>
+                <i>*more features are to be added soon, keep calm and be patient. Also, your feedback on the current features and also those </i>
             </p>
         </div>
     );
