@@ -32,7 +32,7 @@ function ToDoList(){
                     <li>Removing an item from the List</li>
                     <li>Managing its priority/urgency, through moving a task higher up in the list or lower</li>
                 </ul>
-                <i>*more features are to be added soon, keep calm and be patient. Also, your feedback on the current features, suggestion on areas of improvement will be appreciated. <br /> Do so using the following email <a href="mailto:anonymous@gmail.com">contact@todolistapp.com</a></i>
+                <i>*more features are to be added soon, keep calm and be patient. Also, your feedback on the current features, suggestion on areas of improvement will be appreciated. <br /> Do so  <a href="mailto:anonymous@gmail.com">contact@todolistapp.com</a></i>
             </p>
         </div>
     );
