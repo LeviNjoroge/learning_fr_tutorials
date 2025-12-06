@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function ToDoList(){
+function ToDOList(){
 
     const [tasks, setTasks] = useState(["Dummy Task 1", "Dummy Task 2", "Dummy Task 3", "Dummy Task 4", "Dummy Task 5"]);
     const [newTasks, setNewTasks] = useState();
@@ -44,7 +44,7 @@ function ToDoList(){
             </div>
             <ol>
                 {tasks.map((task, index)=> <li key={index}>{task}</li>)}
-            </ol>
+            </ol>   
             <p>This app offers the following functionalities:
                 <ul>
                     <li>Adding an item to the list</li>
