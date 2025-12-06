@@ -59,7 +59,7 @@ function ToDOList(){
                 </button>
                 <button
                     onClick={clearList}
-                    className='deleteButton'
+                    className='deleteAllButton'
                     >
                     Delete All
                 </button>
