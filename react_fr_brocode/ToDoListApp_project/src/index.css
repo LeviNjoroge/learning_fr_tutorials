@@ -25,6 +25,7 @@ button{
 }
 
 .addButton{
+    margin-left: 5px;
     background-color: hsla(120, 100%, 25%, 0.9);
 }
 
@@ -76,7 +77,7 @@ li{
     margin-bottom: 10px;
     border: 3px solid hsl(0, 0%, 87%, .75);
     border-radius: 5px;
-    /* display: flex; */
+    display: flex;
     align-items: center;
 }
 
@@ -89,4 +90,13 @@ li{
     padding: 8px 12px;
     font-size: 1.4rem;
     margin-left: 10px;
+}
+
+.deleteAllButton{
+    margin-left: 5px;
+    background-color: rgb(255, 76, 76);
+}
+
+.deleteAllButton:hover{
+    background-color: rgba(255, 76, 76, 0.466);
 }
