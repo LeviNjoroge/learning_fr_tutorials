@@ -1,3 +1,7 @@
+body{
+    background-color: black;
+}
+
 .ToDoList{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -6,6 +10,7 @@
 
 h1{
     font-size: 4rem;
+    color: white;
 }
 
 button{
@@ -71,12 +76,17 @@ li{
     margin-bottom: 10px;
     border: 3px solid hsl(0, 0%, 87%, .75);
     border-radius: 5px;
-    display: flex;
+    /* display: flex; */
     align-items: center;
-
 }
 
 .text{
     flex: 1;
-    
+
+}
+
+.deleteButton, .upButton, .downButton{
+    padding: 8px 12px;
+    font-size: 1.4rem;
+    margin-left: 10px;
 }
