@@ -51,14 +51,14 @@ function ToDOList(){
                         <button className='downButton' onClick={()=>moveTasksDown(index)}>🔽</button>
                     </li>)}
             </ol>   
-            <p>This app offers the following functionalities:
+            {/* <p>This app offers the following functionalities:
                 <ul>
                     <li>Adding an item to the list</li>
                     <li>Removing an item from the List</li>
                     <li>Managing its priority/urgency, through moving a task higher up in the list or lower</li>
                 </ul>
                 <i>*more features are to be added soon, keep calm and be patient. Also, your feedback on the current features, suggestion on areas of improvement will be appreciated. <br />Email us on <a href="mailto:anonymous@gmail.com">contact@todolistapp.com</a></i>
-            </p>
+            </p> */}
         </div>
     );
 }
