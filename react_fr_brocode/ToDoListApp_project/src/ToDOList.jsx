@@ -14,7 +14,7 @@ function ToDOList(){
         
     }
 
-    function removeTasks(event){
+    function deleteTasks(event){
 
     }
 
@@ -43,7 +43,12 @@ function ToDOList(){
                 </button>
             </div>
             <ol>
-                {tasks.map((task, index)=> <li key={index}>{task}</li>)}
+                {tasks.map((task, index)=> <li key={index}>
+                        <span className='task'>{task}</span>
+                        <button className='deleteButton' onClick={()=>deleteTasks(index)}>🔴</button>
+                        <button className='upButton' onClick={()=>moveTaskUp(index)}>🔼</button>
+                        <button className='downButton' onClick={()=>moveTasksDown(index)}>🔽</button>
+                    </li>)}
             </ol>   
             <p>This app offers the following functionalities:
                 <ul>
