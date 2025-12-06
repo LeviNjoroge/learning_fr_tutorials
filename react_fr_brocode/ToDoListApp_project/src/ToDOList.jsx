@@ -11,19 +11,24 @@ function ToDOList(){
     }
 
     function addTask() {
-        setTasks(t=>[...t, newTasks])
-        setNewTasks("");
+        if(newTasks.trim() !== ""){
+            setTasks(t=>[...t, newTasks])
+            setNewTasks("");
+        }
     }
 
-    function deleteTasks(event){
-
+    function deleteTasks(index){
+        setTasks(tasks.filter((_, i) => i !== index))
     }
 
-    function moveTaskUp(event){
-
+    function moveTaskUp(index){
+        if(index>0){
+            const updatedTasks = [...tasks];
+            
+        }
     }
 
-    function moveTasksDown(event){
+    function moveTasksDown(index){
 
     }
 
@@ -47,7 +52,7 @@ function ToDOList(){
             <ol>
                 {tasks.map((task, index)=> <li key={index}>
                         <span className='task'>{task}</span>
-                        <button className='deleteButton' onClick={()=>deleteTasks(index)}>🚮</button>
+                        <button className='deleteButton' onClick={()=>deleteTasks(index)}>DELETE</button>
                         <button className='upButton' onClick={()=>moveTaskUp(index)}>🔼</button>
                         <button className='downButton' onClick={()=>moveTasksDown(index)}>🔽</button>
                     </li>)}
