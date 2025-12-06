@@ -38,6 +38,7 @@ function ToDOList(){
                 />
                 <button
                     onClick={addTask}
+                    className='addButton'
                     >
                     Add
                 </button>
