@@ -5,8 +5,13 @@ function ToDoList(){
     const [tasks, setTasks] = useState(["Dummy Task 1", "Dummy Task 2", "Dummy Task 3", "Dummy Task 4", "Dummy Task 5"]);
     const [newTasks, setNewTasks] = useState();
 
-    function addTasks(){
+    function handleInputChange(event){
+        const input = event.target.value;
+        setNewTasks()
+    }
 
+    function addTask() {
+        
     }
 
     function removeTasks(event){
@@ -24,8 +29,22 @@ function ToDoList(){
     return(
         <div className="ToDoList">
             <h1>To-Do List</h1>
-            <ul>
-            </ul>
+            <div>
+                <input 
+                    type="text" 
+                    placeholder='Enter some task' 
+                    value={newTasks}
+                    onChange={handleInputChange}
+                />
+                <button
+                    onClick={addTask}
+                    >
+                    Add
+                </button>
+            </div>
+            <ol>
+                {tasks.map((task, index)=> <li key={index}>{task}</li>)}
+            </ol>
             <p>This app offers the following functionalities:
                 <ul>
                     <li>Adding an item to the list</li>
