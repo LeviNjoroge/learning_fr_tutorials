@@ -2,16 +2,17 @@ import React, { useState } from 'react';
 
 function ToDOList(){
 
-    const [tasks, setTasks] = useState(["Dummy Task 1", "Dummy Task 2", "Dummy Task 3", "Dummy Task 4", "Dummy Task 5"]);
+    const [tasks, setTasks] = useState(["Dummy Task 1", "Dummy Task 2", "Dummy Task 3"]);
     const [newTasks, setNewTasks] = useState();
 
     function handleInputChange(event){
         const input = event.target.value;
-        setNewTasks()
+        setNewTasks(input)
     }
 
     function addTask() {
-        
+        setTasks(t=>[...t, newTasks])
+        setNewTasks("");
     }
 
     function deleteTasks(event){
