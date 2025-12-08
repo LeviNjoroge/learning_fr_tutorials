@@ -1,4 +1,4 @@
-ort './App.css'
+rt './App.css'
 
 function App() {
   
