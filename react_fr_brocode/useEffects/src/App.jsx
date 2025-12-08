@@ -1,4 +1,4 @@
-t './App.css'
+'./App.css'
 
 function App() {
   
