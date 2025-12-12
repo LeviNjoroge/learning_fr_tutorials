@@ -1,4 +1,5 @@
 // I have used destructured props with default values
+
 function Student({
   name = "Guest",
   age = 0,
