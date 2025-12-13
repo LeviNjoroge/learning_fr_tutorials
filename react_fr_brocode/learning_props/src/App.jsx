@@ -8,7 +8,7 @@ function App(){
       <Student name="Sandy" age="21" course="BSc. Physics"/>
       <Student/>
       <Student name="Squidward" age="90" course="Music"/>
-      </>
+      <Student />
     </>
   );
 }
