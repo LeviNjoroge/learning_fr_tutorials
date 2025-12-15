@@ -1,4 +1,4 @@
-// this' one of the many REACT HOOKS that ex
+// this' one of the many REACT HOOKS that exist out there
 
 import React, { useState, useEffect } from 'react';
 
