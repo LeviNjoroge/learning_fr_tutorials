@@ -1,5 +1,5 @@
 // this' one of the many REACT HOOKS that exist out there
-// Use Effect is the second Hook we'll be going through
+// Use Effect is the second Hook we'll be going through in this
 
 import React, { useState, useEffect } from 'react';
 
