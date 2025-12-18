@@ -7,7 +7,7 @@ function Component1(){
 
     return (
         <>  
-            "Hello we are learning REACT"
+            "Hello we are learning REACT Hooks"
         </>
     );
 }
