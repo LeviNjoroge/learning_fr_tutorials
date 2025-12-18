@@ -7,7 +7,7 @@ function Component1(){
 
     return (
         <>  
-            "Hello"
+            "Hello we are learning "
         </>
     );
 }
