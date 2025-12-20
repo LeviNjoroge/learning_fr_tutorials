@@ -1,6 +1,6 @@
 // this' one of the many REACT HOOKS that exist out there
 // Use Effect is the second Hook we'll be going through in this journey of learning react
-// with useEffect hook, its like telling the 
+// with useEffect hook, its like telling the program to execute some code when some pre
 
 import React, { useState, useEffect } from 'react';
 
