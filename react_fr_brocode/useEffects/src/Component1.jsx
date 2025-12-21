@@ -9,7 +9,7 @@ function Component1(){
 
     return (
         <>  
-            "Hello we are learning REACT Hooks"
+            
         </>
     );
 }
