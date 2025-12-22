@@ -1,5 +1,5 @@
 // useEffect react hooks
-// these are used to 
+// these are used to run some code
 
 import React, { useState, useEffect } from 'react';
 
