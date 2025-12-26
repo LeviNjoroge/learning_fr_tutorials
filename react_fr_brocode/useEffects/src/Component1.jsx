@@ -14,7 +14,7 @@ function Component1(){
 
         <>
             <p>{count}</p>
-            <button>Add</button>
+            <button onClick={addCount}>Add</button>
         </>
     );
 }
