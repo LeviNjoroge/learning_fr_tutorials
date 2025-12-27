@@ -5,13 +5,11 @@ function DimensionsChecker(){
     const [width, setWidth] = useState(window.innerWidth);
     const [height, setHeight] = useState(window.innerHeight);
 
-        useEffect(()=>{
-            setWidth(window.innerWidth);
-        }, []);
 
-        useEffect(()=>{
-            setHeight(window.innerHeight);
-        }, []);
+    function handleDimensionsChange(){
+        setWidth(window.innerWidth);
+        setHeight(window.innerHeight);
+    }
 
     return (
         <>
