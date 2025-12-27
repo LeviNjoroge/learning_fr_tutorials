@@ -7,11 +7,11 @@ function DimensionsChecker(){
 
         useEffect(()=>{
             setWidth(window.innerWidth);
-        }, [window.innerWidth]);
+        }, []);
 
         useEffect(()=>{
             setHeight(window.innerHeight);
-        }, [window.innerHeight]);
+        }, []);
 
     return (
         <>
