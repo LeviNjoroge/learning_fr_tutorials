@@ -10,9 +10,8 @@ function DimensionsChecker(){
         }, [window.innerWidth]);
 
         useEffect(()=>{
-            setWidth(window.innerWidth);
-        }, [window.innerWidth]);
-    
+            setHeight(window.innerHeight);
+        }, [window.innerHeight]);
 
     return (
         <>
