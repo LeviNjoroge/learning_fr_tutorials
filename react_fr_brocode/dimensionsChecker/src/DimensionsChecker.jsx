@@ -5,13 +5,19 @@ function DimensionsChecker(){
     const [width, setWidth] = useState(window.innerWidth);
     const [height, setHeight] = useState(window.innerHeight);
 
-    window.addEventListener("resize", handleDimensionsChange);
+    useEffect(()=>{
+        window.addEventListener("resize", handleDimensionsChange);
+        console.log("Updated Dimensions")
+    }, [])
 
     function handleDimensionsChange(){
         setWidth(window.innerWidth);
         setHeight(window.innerHeight);
-        console.log("Updated Dimensions")
     }
+
+    useEffect(()=>{
+        document.title = `${height} x ${width}`;
+    }, [height, width]);
 
     return (
         <>
