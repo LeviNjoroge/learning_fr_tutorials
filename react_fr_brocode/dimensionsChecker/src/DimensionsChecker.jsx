@@ -5,13 +5,12 @@ function DimensionsChecker(){
     const [width, setWidth] = useState(window.innerWidth);
     const [height, setHeight] = useState(window.innerHeight);
 
-    useEffect(()=>{
-        window.addEventListener("resize", handleDimensionsChange);
-    }, [])
+    window.addEventListener("resize", handleDimensionsChange);
 
     function handleDimensionsChange(){
         setWidth(window.innerWidth);
         setHeight(window.innerHeight);
+        console.log("")
     }
 
     return (
