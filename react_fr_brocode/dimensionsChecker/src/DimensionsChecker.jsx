@@ -21,7 +21,7 @@ function DimensionsChecker(){
 
     return (
         <>
-            Width: {width}px
+            Width: {width}px <hr />
             Height: {height}px
         </>
     );
