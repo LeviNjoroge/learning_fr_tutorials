@@ -10,7 +10,7 @@ function DimensionsChecker(){
     //     console.log("Updated Dimensions")
     // }, [])
 
-    onresize(handleDimensionsChange);
+    // onresize(handleDimensionsChange)
 
     function handleDimensionsChange(){
         setWidth(window.innerWidth);
@@ -23,7 +23,7 @@ function DimensionsChecker(){
 
     return (
         <>
-            Width: {width}px <hr />
+            Width: {width}px <br />
             Height: {height}px
         </>
     );
