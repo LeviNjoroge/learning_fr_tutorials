@@ -1,3 +1,26 @@
-.digitalClock{
-  background-image
+body{
+  background-image: url(./assets/sunrise-snowy-mountains-clouds.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.clock{
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  text-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.674);
+}
+
+footer{
+  font-size: 0.5rem;
+  text-align: right;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
 }
