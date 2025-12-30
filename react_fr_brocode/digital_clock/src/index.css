@@ -5,11 +5,22 @@ body{
   background-size: cover;
   background-attachment: fixed;
   margin: 0;
+
+
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.digitalClock{
+  width: 100vw;
 }
 
 .clock{
+  /* backdrop-filter: blur(1px); */
   color: white;
-  font-size: 6rem;
+  font-size: 10rem;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
