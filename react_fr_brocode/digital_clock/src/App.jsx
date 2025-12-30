@@ -1,4 +1,4 @@
-
+import DigitalClock from "./DigitalClock";
 
 
 function App(){
@@ -6,7 +6,7 @@ function App(){
   return (
 
     <>
-    
+      <DigitalClock></DigitalClock>
     </>
   );
 }
