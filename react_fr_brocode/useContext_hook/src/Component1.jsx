@@ -17,5 +17,4 @@ function Component1(){
         </div>
     );
 }
-
 export default Component1;
