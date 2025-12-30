@@ -6,17 +6,17 @@ function MyComponent(){
 
     // check for when the component rerenders
     useEffect(()=>{
-        console.log('COMPONENT RERENDERED')
+        console.log('COMPONENT RENDERED')
     })
 
     function handleAddition(){
         ref.current++;
+        console.log(ref.current);
     }
 
     return(
-        
         <>
-            <h1>{ref}</h1>
+            <h1>{ref.current}</h1>
             <button onClick={handleAddition}>Increase Value</button>
         </>
     );
