@@ -1,6 +1,8 @@
 import Component2 from "./Component2";
 import React, { useState, useEffect, createContext} from 'react';
 
+export const userName = createContext(user);
+
 function Component1(){
 
     const [user, setUser] = useState("Jay");
