@@ -1,7 +1,7 @@
 import Component2 from "./Component2";
 import React, { useState, useEffect, createContext} from 'react';
 
-export const userName = createContext(user);
+export const userContext = createContext();
 
 function Component1(){
 
@@ -11,6 +11,9 @@ function Component1(){
         <div className="box">
             <h1>Component1</h1>
             <h2>Hello {user}</h2>
+            <userContext.Provider value={user}>
+                
+            </userContext.Provider>
             <Component2/>
         </div>
     );
