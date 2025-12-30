@@ -1,12 +1,12 @@
 
 
-function Component1(){
+function Component2(){
 
     return(
         <div className="box">
-            <h1>Component1</h1>
+            <h1>Component2</h1>
         </div>
     );
 }
 
-export default Component1;
+export default Component2;
