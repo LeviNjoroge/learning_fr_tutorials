@@ -10,23 +10,44 @@ function Stopwatch() {
     const startTimeRef = useRef(0);
 
     useEffect(()=>{
+        if (isRunning) {
+            intervalIdRef.current = setInterval(() => {
+                setElapsedTime(Date.now() - startTimeRef.current);
+            }, 10);
+        }
+
+        return () => {
+            clearInterval(intervalIdRef.current);
+        }
 
     },[isRunning])
 
     function start(){
-
+        setIsRunning(true);
+        startTimeRef.current = Date.now() - elapsedTime;
     }
 
     function stop(){
-
+        setIsRunning(false);    
     }
 
     function reset(){
-
+        setElapsedTime(0);
+        setIsRunning(false);
     }
 
     function formatTime(){
-        return `00:00:00`;
+
+        let hours = Math.floor(elapsedTime / (1000 * 60 * 60));
+        let mins = Math.floor(elapsedTime/(1000*60)%60);
+        let secs = Math.floor(elapsedTime/(1000)%60);
+        let millisecs = Math.floor((elapsedTime%1000)/10);
+
+        return `${purseTime(hours)}:${purseTime(mins)}:${purseTime(secs)}:${purseTime(millisecs)}`;
+    }
+
+    function purseTime(number){
+        return (number<10? "0" : "") + number;
     }
   return (
     <div className="stopWatch">
