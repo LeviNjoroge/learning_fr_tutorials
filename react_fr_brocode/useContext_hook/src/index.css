@@ -1,4 +1,4 @@
 .box{
-    margin:3px solid;
-    
+    border:3px solid;
+    padding: 25px;
 }
