@@ -43,12 +43,17 @@ function Stopwatch() {
         let secs = Math.floor(elapsedTime/(1000)%60);
         let millisecs = Math.floor((elapsedTime%1000)/10);
 
-        return `${purseTime(hours)}:${purseTime(mins)}:${purseTime(secs)}:${purseTime(millisecs)}`;
+        hours = String(hours).padStart(2, "0");
+        mins = String(mins).padStart(2, "0");
+        secs = String(secs).padStart(2, "0");
+        millisecs = String(millisecs).padStart(2, "0");
+
+        return `${hours}:${mins}:${secs}:${millisecs}`;
     }
 
-    function purseTime(number){
-        return (number<10? "0" : "") + number;
-    }
+    // function purseTime(number){
+    //     return (number<10? "0" : "") + number;
+    // }
   return (
     <div className="stopWatch">
         <div className="display">{formatTime()}</div>
