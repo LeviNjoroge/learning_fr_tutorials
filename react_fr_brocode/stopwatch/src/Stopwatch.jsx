@@ -52,7 +52,7 @@ function Stopwatch() {
     }
 
     // function purseTime(number){
-    //     return 
+    /
     
   return (
     <div className="stopWatch">
