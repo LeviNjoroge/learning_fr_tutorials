@@ -51,7 +51,7 @@ function Stopwatch() {
         return `${hours}:${mins}:${secs}:${millisecs}`;
     }
 
-    // function purseTime(
+    // function 
     
   return (
     <div className="stopWatch">
