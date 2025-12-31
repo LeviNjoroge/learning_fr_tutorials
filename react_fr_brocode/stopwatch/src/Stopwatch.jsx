@@ -50,8 +50,6 @@ function Stopwatch() {
 
         return `${hours}:${mins}:${secs}:${millisecs}`;
     }
-
-    // funct
     
   return (
     <div className="stopWatch">
@@ -62,7 +60,7 @@ function Stopwatch() {
             <button className='resetButton' onClick={reset}>Reset</button>
         </div>
     </div>
-  )
+  ) 
 }
 
 export default Stopwatch
