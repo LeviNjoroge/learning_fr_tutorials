@@ -51,7 +51,7 @@ function Stopwatch() {
         return `${hours}:${mins}:${secs}:${millisecs}`;
     }
 
-    // function 
+    // funct
     
   return (
     <div className="stopWatch">
