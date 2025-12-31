@@ -12,7 +12,7 @@ function Stopwatch() {
     useEffect(()=>{
         if (isRunning) {
             intervalIdRef.current = setInterval(() => {
-                setElapsedTime(Date.now() - startTimeRef.current);
+                setElapsedTime(Date.now() - startTimeRef.current); 
             }, 10);
         }
 
@@ -55,10 +55,10 @@ function Stopwatch() {
     <div className="stopWatch">
         <div className="display">{formatTime()}</div>
         <div className="controls">
-            <button className='startButton' onClick={start}>Start</button>
-            <button className='stopButton' onClick={stop}>Stop</button>
-            <button className='resetButton' onClick={reset}>Reset</button>
-        </div>
+            <button className='startButton' onClick={start}>Start</button> 
+            <button className='stopButton' onClick={stop}>Stop</button>    
+            <button className='resetButton' onClick={reset}>Reset</button> 
+        </div>                                                             
     </div>
   ) 
 }
