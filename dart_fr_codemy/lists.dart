@@ -56,5 +56,16 @@ void main(){
   fruits.insertAll(0, ["Apples", "Blueberries"]);
   print(fruits);
 
-  // 
+  // remove from a list;
+  fruits.remove("Mangoes"); // delete a specific item
+  print(fruits);
+  fruits.removeAt(2); // delete an item at a certain location/index
+  print(fruits);
+  fruits.removeWhere((i)=>i=="Apples"); // remove items that certisfy the condition
+  print(fruits);
+  fruits.removeLast(); // deletes the last item in the list
+  print(fruits);
+  // removeRange -- deletes a range of indices
+
+  
 }
