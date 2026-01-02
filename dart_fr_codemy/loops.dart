@@ -6,5 +6,10 @@ void main(){
     print(i);
   }
   
-  
+  // for in loop
+  // used to do sth to some list iteratively
+  List names = ["Amina", "Brian", "Collins", "Denis"];
+  for(var name in names){
+    print(name);
+  }
 }
