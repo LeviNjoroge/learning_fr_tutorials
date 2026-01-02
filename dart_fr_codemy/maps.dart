@@ -13,7 +13,8 @@ void main(){
   print("Number of registered toppings: ${toppings.length}"); // get the number of key/value pairs existing
 
   // to add an item 
-
+  brand["Kevin"] = "Audi";
+  print("New list of brands: ${brand}");
   Map<String, String> namesAndCourses = {};
   print(namesAndCourses);
 
