@@ -16,7 +16,7 @@ void main(){
     print("${studentName} is an international student");
   }
 
-  var gpa = 3.5;
+  var gpa = 3.4;
   if(gpa <2){
     print("${studentName} needs to work on his gpa");
   } else if(gpa < 3.5){
