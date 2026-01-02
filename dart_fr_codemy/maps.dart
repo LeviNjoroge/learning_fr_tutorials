@@ -15,6 +15,10 @@ void main(){
   // to add an item 
   brand["Kevin"] = "Audi";
   print("New list of brands: ${brand}");
+  // or add many 
+  brand.addAll({"Tina":"Sausages", "Steve":"Bacon"});
+  print("New toppings list: ${toppings}");
+  
   Map<String, String> namesAndCourses = {};
   print(namesAndCourses);
 
