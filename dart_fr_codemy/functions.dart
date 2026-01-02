@@ -3,8 +3,8 @@ void main(){
   // functions
 
   myFunc(){
-    print("Hello fellow functions!");
+    return "Hello fellow functions!";
   }
 
-  myFunc();
+  print(myFunc());
 }
