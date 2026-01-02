@@ -12,4 +12,10 @@ void main(){
   for(var name in names){
     print(name);
   }
+
+  // while
+  var num = 10;
+  while(num >= 1){
+    print(num);
+  }
 }
