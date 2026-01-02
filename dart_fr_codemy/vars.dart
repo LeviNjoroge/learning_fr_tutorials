@@ -7,4 +7,6 @@ void main(){
   dynamic gpa = 3.5;
 
   print(name);
+  print(age);
+  print(gpa);
 }
