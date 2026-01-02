@@ -22,5 +22,11 @@ void main(){
   Map<String, String> namesAndCourses = {};
   print(namesAndCourses);
 
+  // delete items?
+  print(toppings.remove("Steve"));
+
+  // delete all, clean the slate:
+  toppings.clear();
+  print("final list ${toppings}");
   
 }
