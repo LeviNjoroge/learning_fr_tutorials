@@ -1,14 +1,14 @@
 void main(){
 
   var name = "Joe"; //declaring a variable using 'var'
-  name = "Joseph"; // see how the value of the variable 'name' accepts change
 
-  int age = 30;
+  int age = 30; // BEST PRACTICE, if you know the data type you are working with, use the datatype name to declare the variable
 
   dynamic gpa = 3.5;
 
   const String school = "Gumbaru School";
   // school = "NBO Gumbaru School"; -- DOES NOT WORK SINCE THE VARIABLE IS A CONSTANT
+  name = "Joseph"; // see how the value of the variable 'name' accepts change
 
   int finalScore; // you can declare and not assign
   finalScore = 45;
