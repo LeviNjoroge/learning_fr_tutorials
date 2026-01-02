@@ -23,7 +23,8 @@ void main(){
   print(namesAndCourses);
 
   // delete items?
-  print(toppings.remove("Steve"));
+  toppings.remove("Steve");
+  print(toppings);
 
   // delete all, clean the slate:
   toppings.clear();
