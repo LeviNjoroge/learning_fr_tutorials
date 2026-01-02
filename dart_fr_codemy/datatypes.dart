@@ -13,5 +13,11 @@ void main(){
   double gpa = 4.2;
   print("Double: $gpa");
 
-  
+  // Boolean
+  bool hasClearedFees = false;
+  print("Boolean: $hasClearedFees");
+
+  // Dynamic
+  dynamic school = "SIRON University";
+  print("Dynamic: $school");
 }
