@@ -11,7 +11,7 @@ void main(){
   name = "Joseph"; // see how the value of the variable 'name' accepts change
 
   int finalScore; // you can declare and not assign
-  finalScore = 45;
+  finalScore = 45; // assigning a value to an already declared variable
 
   print(name);
   print(age);
