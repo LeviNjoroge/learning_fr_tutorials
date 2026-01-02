@@ -14,8 +14,9 @@ void main(){
   }
 
   // while
-  var num = 10;
-  while(num >= 1){
+  var num = 1;
+  while(num <= 10){
     print(num);
+    num++;
   }
 }
