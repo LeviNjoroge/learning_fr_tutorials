@@ -1,7 +1,6 @@
 
 void main(){
-  Person Joe =Person("John", "Male", 20);
-  print(Joe.displayData("white"));
+  
 }
 
 class Person{
