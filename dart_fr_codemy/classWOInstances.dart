@@ -2,7 +2,7 @@
 void main(){
   Person joe = Person();
   joe.name = "Joseph";
-  print(joe.displayData());
+  print(joe.displayData("Black"));
 }
 
 class Person{
@@ -13,7 +13,6 @@ class Person{
     this.name = name;
     this.sex = sex;
     this.age = age;
-    return 1;
   }
 
   String displayData(String race){
