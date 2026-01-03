@@ -6,7 +6,7 @@ void main(){
 
   print("Hello! Enter name please:");
   String? nameInput = stdin.readLineSync();
-  print("Nice to meet you ${nameInput}\n How old are you?");
+  print("Nice to meet you ${nameInput}\nHow old are you?");
   var ageInput = stdin.readLineSync();
   int age = int.parse(ageInput ?? '0');
   if (age > 18) {
