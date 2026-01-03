@@ -5,7 +5,7 @@ void main(){
   // user Input
   print("Enter your name");
 
-  // can declare a variable with var, dynamic, or nullable type
+  // can declare a variable with var, dynamic, or nullable type ie <datatype>?
   String? name = stdin.readLineSync();
 
   print("Hello ${name}");
