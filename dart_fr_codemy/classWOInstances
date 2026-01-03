@@ -1,6 +1,7 @@
 
 void main(){
-  
+  Person joe = Person();
+  joe.name = "Joseph"
 }
 
 class Person{
