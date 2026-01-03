@@ -1,7 +1,8 @@
 
 void main(){
   Person joe = Person();
-  joe.name = "Joseph"
+  joe.name = "Joseph";
+  print(joe.displayData());
 }
 
 class Person{
