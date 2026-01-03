@@ -17,5 +17,9 @@ void main(){
   print(f);
 
   // int or double to string
-  
+  var x, y, z;
+  x = 101;
+  y = "02";
+  z = x.toString() + y;
+  print(z);
 }
