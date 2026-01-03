@@ -16,5 +16,6 @@ void main(){
   f = 40 * double.parse(d);
   print(f);
 
-  // int or 
+  // int or double to string
+  
 }
