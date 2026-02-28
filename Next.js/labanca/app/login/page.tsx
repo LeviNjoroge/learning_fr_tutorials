@@ -1,7 +1,16 @@
+"use client";
+
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Login = () => {
+  const router = useRouter();
   const error = "";
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    router.push("/user/dashboard");
+  };
 
   return (
     <main className="mx-auto flex min-h-[calc(100vh-3rem)] w-[min(560px,92%)] items-center py-10">
@@ -14,14 +23,14 @@ const Login = () => {
           <span>Back to Home</span>
         </Link>
 
-        <h1 className="font-[family-name:var(--font-space-grotesk)] text-3xl font-semibold text-[color:var(--text-strong)]">
+        <h1 className="mt-3 font-[family-name:var(--font-space-grotesk)] text-3xl font-semibold text-[color:var(--text-strong)]">
           Welcome Back to LaBanca
         </h1>
         <h2 className="mt-1 text-sm font-medium uppercase tracking-[0.08em] text-[color:var(--text-muted)]">
           Signin Form
         </h2>
 
-        <form action="#" method="post" className="mt-6 space-y-4">
+        <form action="#" method="post" onSubmit={handleSubmit} className="mt-6 space-y-4">
           <div>
             <label htmlFor="username" className="text-sm font-medium text-[color:var(--text-strong)]">
               Username / Email:

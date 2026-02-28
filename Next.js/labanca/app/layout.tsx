@@ -40,7 +40,15 @@ export default function RootLayout({
         />
       </head>
       <body className={`${manrope.variable} ${spaceGrotesk.variable} antialiased`}>
-        {children}
+        <div className="bg-scene" aria-hidden="true">
+          <div className="bg-orb bg-orb-a" />
+          <div className="bg-orb bg-orb-b" />
+          <div className="bg-orb bg-orb-c" />
+          <div className="bg-wave" />
+          <div className="bg-grid" />
+          <div className="bg-noise" />
+        </div>
+        <div className="app-shell">{children}</div>
       </body>
     </html>
   );

@@ -12,6 +12,7 @@ export default function AdminLayout({
         links={[
           { href: "/admin/dashboard", label: "Dashboard" },
           { href: "/admin/transactions", label: "Transactions" },
+          { href: "/admin/users", label: "Users" },
         ]}
       />
       <main className="mx-auto w-[min(1200px,94%)] py-8">{children}</main>

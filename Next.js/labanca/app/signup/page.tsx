@@ -14,7 +14,7 @@ const Signup = () => {
           <span>Back to Home</span>
         </Link>
 
-        <h1 className="font-[family-name:var(--font-space-grotesk)] text-3xl font-semibold text-[color:var(--text-strong)]">
+        <h1 className="mt-3 font-[family-name:var(--font-space-grotesk)] text-3xl font-semibold text-[color:var(--text-strong)]">
           Create Your LaBanca Account
         </h1>
         <h2 className="mt-1 text-sm font-medium uppercase tracking-[0.08em] text-[color:var(--text-muted)]">
