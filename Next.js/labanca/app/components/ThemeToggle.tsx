@@ -29,7 +29,7 @@ const ThemeToggle = () => {
       className="rounded-lg border border-[color:var(--line)] bg-[color:var(--card)] px-3 py-2 text-xs font-medium text-[color:var(--text-strong)] transition hover:bg-[color:var(--surface)]"
       aria-label="Toggle dark mode"
     >
-      {theme === "dark" ? "Light" : "Dark"}
+      {theme === "dark" ? "Light mode" : "Dark mode"}
     </button>
   );
 };
