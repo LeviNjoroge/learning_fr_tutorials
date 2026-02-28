@@ -1,5 +1,60 @@
 @import "tailwindcss";
 
-body{
-  background-color: hsl(30%, 10%, 70%);
+:root {
+  --bg: #eff4fb;
+  --surface: #f8fbff;
+  --card: #ffffff;
+  --card-soft: #f3f7fd;
+  --brand: #0e5ecc;
+  --brand-deep: #08306b;
+  --accent: #1b9a86;
+  --text-strong: #0f172a;
+  --text-muted: #4b5563;
+  --line: #dbe4f1;
+}
+
+html[data-theme="dark"] {
+  --bg: #060d1a;
+  --surface: #0d1728;
+  --card: #111d30;
+  --card-soft: #15243a;
+  --brand: #4a8dff;
+  --brand-deep: #2f6bd1;
+  --accent: #2fc4a4;
+  --text-strong: #e5edf8;
+  --text-muted: #a6b6cc;
+  --line: #22364f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-manrope), sans-serif;
+  color: var(--text-strong);
+  background:
+    radial-gradient(circle at 10% 12%, rgba(33, 107, 205, 0.17), transparent 38%),
+    radial-gradient(circle at 86% 5%, rgba(27, 154, 134, 0.15), transparent 32%),
+    linear-gradient(180deg, color-mix(in srgb, var(--surface) 92%, white) 0%, var(--bg) 55%, color-mix(in srgb, var(--bg) 85%, black) 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
