@@ -172,7 +172,7 @@ export default function Home() {
               Teams and families trust Labanca daily.
             </h2>
 
-            <div className="mt-8 grid gap-4 md:grid-cols-3">
+            <div className="mt-5 grid gap-4 md:grid-cols-3">
               <blockquote className="rounded-2xl border border-[color:var(--line)] bg-[color:var(--card-soft)] p-5 text-sm leading-6 text-[color:var(--text-muted)]">
                 &ldquo;Transfers arrive fast, and the app is clear enough for my whole team to use without training.&rdquo;
               </blockquote>

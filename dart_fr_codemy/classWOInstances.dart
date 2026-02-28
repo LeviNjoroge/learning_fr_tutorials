@@ -10,7 +10,7 @@ class Person{
   int? age;
 
   void createAttributes(String name,String sex,int age){
-    this.name = name;
+    this.name = name; 
     this.sex = sex;
     this.age = age;
   }

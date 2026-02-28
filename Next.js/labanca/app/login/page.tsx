@@ -6,6 +6,14 @@ const Login = () => {
   return (
     <main className="mx-auto flex min-h-[calc(100vh-3rem)] w-[min(560px,92%)] items-center py-10">
       <div className="w-full rounded-2xl border border-[color:var(--line)] bg-[color:var(--card)] p-6 shadow-[0_20px_40px_rgba(9,31,67,0.08)] sm:p-8">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 rounded-lg border border-[color:var(--line)] bg-[color:var(--surface)] px-3 py-2 text-xs font-semibold uppercase tracking-[0.08em] text-[color:var(--text-muted)] transition hover:bg-[color:var(--card-soft)]"
+        >
+          <span aria-hidden="true">{"<"}</span>
+          <span>Back to Home</span>
+        </Link>
+
         <h1 className="font-[family-name:var(--font-space-grotesk)] text-3xl font-semibold text-[color:var(--text-strong)]">
           Welcome Back to LaBanca
         </h1>
@@ -22,7 +30,7 @@ const Login = () => {
               type="text"
               name="username"
               id="username"
-              placeholder="joe_doe"
+              placeholder="baraka_otieno"
               required
               className="mt-2 w-full rounded-xl border border-[color:var(--line)] bg-[color:var(--surface)] px-4 py-3 text-sm text-[color:var(--text-strong)] outline-none transition focus:border-[color:var(--brand)] focus:ring-2 focus:ring-[color:var(--brand)]/20"
             />

@@ -10,9 +10,9 @@ const UsersPage = async () => {
   const users:User[] = await res.json();
 
   return (
-    <>
+    <div className='overflow-x-auto'>
       <h1>Users</h1>
-      <table className='table table-bordered'>
+      <table className='table border border-amber-950'>
         <thead>
           <tr>
             <th>Name</th>
@@ -29,7 +29,7 @@ const UsersPage = async () => {
           }
         </tbody>
       </table>
-    </>
+    </div>
   )
 }
 

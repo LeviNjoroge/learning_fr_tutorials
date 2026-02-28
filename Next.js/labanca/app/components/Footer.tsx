@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="mt-20 border-t border-[color:var(--line)] bg-[color:var(--surface)]/70">
+    <footer className="mt-5 border-t border-[color:var(--line)] bg-[color:var(--surface)]/70">
       <div className="mx-auto grid w-[min(1120px,92%)] gap-8 py-12 md:grid-cols-4">
         <div className="md:col-span-2">
           <h2 className="font-[family-name:var(--font-space-grotesk)] text-xl font-semibold text-[color:var(--text-strong)]">
