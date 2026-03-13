@@ -8,3 +8,4 @@ for some_fruits in range(2, 5):
     print(fruits[some_fruits])
 for fruit in fruits:
     print(fruit)
+range()
